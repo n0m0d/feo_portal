@@ -39,4 +39,352 @@ body
 	max-width: 100%
 	height: auto
 
+.toggle-menu
+	display: inline-block
+	width: 28px
+	height: 15px
+	margin: 17px 15px 8px
+	float: left
+
+.toggle-menu span:after,
+.toggle-menu span:before
+	content: ""
+	position: absolute
+	left: 0
+	top: -9px
+
+.toggle-menu span:after
+	top: 9px
+
+.toggle-menu span
+	position: relative
+	display: block
+
+.toggle-menu span,
+.toggle-menu span:after,
+.toggle-menu span:before
+	width: 100%
+	height: 5px
+	background-color: #fff
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+
+.toggle-menu.on span
+	background-color: transparent
+
+.toggle-menu.on span:before
+	transform: rotate(45deg) translate(5px, 5px)
+
+.toggle-menu.on span:after
+	transform: rotate(-45deg) translate(7px, -8px)
+
+.toggle-menu.on + #menu
+	opacity: 1
+	visibility: visible
+
+//Шапка сайта
+.main-header
+	min-height: 115px
+	font-size: 0
+	.main-wrap
+		.sect-1
+			width: 17%
+			display: inline-block
+			vertical-align: middle
+			.logo-wrap
+				line-height: 115px
+				.logo
+					a
+						font-size: 16px
+						display: block
+		.sect-2
+			display: inline-block
+			//padding: 0 80px 0 40px
+			vertical-align: middle
+			width: 20%
+			.auth-wrap
+				font-size: 0
+				div
+					display: inline-block
+					a
+						font-size: 13px
+						line-height: 18px
+						font-weight: light
+						color: #464646
+						vertical-align: middle
+						display: inline-block
+				.login
+					padding-right: 15px
+					border-right: 0.5px solid #c6c6c6
+					span
+						vertical-align: middle
+						font-size: 18px
+						line-height: 23px
+						color: $accent
+						padding-right: 10px
+				.reg
+					line-height: 23px
+					padding-left: 15px
+					border-left: 0.5px solid #c6c6c6
+			.location-wrap
+				margin-top: 10px
+				.location
+					display: inline-block
+					.icon-location-pin
+						vertical-align: middle
+						font-size: 18px
+						line-height: 23px
+						color: $accent
+						padding-right: 10px
+					#city_filter_chosen
+						font-size: 14px
+						line-height: 19px
+						display: inline-block
+						vertical-align: middle
+						position: relative
+						min-width: 100px
+						a
+							font-size: 14px
+							line-height: 25px
+							font-weight: light
+							color: $accent
+							vertical-align: middle
+							display: inline-block
+						.chosen-drop
+							max-width: 155px
+							display: inline-block
+							vertical-align: middle
+							position: absolute
+							left: 0
+		.sect-3
+			display: inline-block
+			vertical-align: middle
+			//text-align: right
+			width: 27%
+			.add-listing
+				display: inline-block
+				span
+					color: $red
+					font-size: 18px
+					line-height: 21px
+					vertical-align: middle
+					padding-right: 10px
+				a
+					color: $red
+					font-size: 13px
+					line-height: 18px
+					vertical-align: middle
+			.items-wrap
+				margin-top: 10px
+				//text-align: left
+				.item
+					display: inline-block
+					padding: 0 10px
+					.icon-wrap
+						border: 1px solid $accent
+						border-radius: 50%
+						width: 21px
+						height: 21px
+						display: inline-block
+						text-align: center
+						margin-right: 10px
+						display: inline-block
+						vertical-align: middle
+						.mini
+							font-size: 14px
+							color: $accent
+							line-height: 21px
+							margin-right: 0
+					i
+						font-size: 18px
+						color: $accent
+						line-height: 23px
+						display: inline-block
+						vertical-align: middle
+						margin-right: 10px
+					div
+						color: #1f1f1f
+						font-size: 14px
+						line-height: 23px
+						display: inline-block
+						vertical-align: middle
+						.temperature
+							color: #9b9b9b
+					&:first-child
+						padding-left: 0
+					&:last-child
+						padding-right: 0
+		.sect-4
+			display: inline-block
+			vertical-align: middle
+			width: 36%
+			.items-wrap
+				margin-top: 10px
+				//text-align: left
+				display: none
+				.item
+					display: inline-block
+					padding: 0 10px
+					.icon-wrap
+						border: 1px solid $accent
+						border-radius: 50%
+						width: 21px
+						height: 21px
+						display: inline-block
+						text-align: center
+						margin-right: 10px
+						display: inline-block
+						vertical-align: middle
+						.mini
+							font-size: 14px
+							color: $accent
+							line-height: 21px
+							margin-right: 0
+					i
+						font-size: 18px
+						color: $accent
+						line-height: 23px
+						display: inline-block
+						vertical-align: middle
+						margin-right: 10px
+					div
+						color: #1f1f1f
+						font-size: 14px
+						line-height: 23px
+						display: inline-block
+						vertical-align: middle
+						.temperature
+							color: #9b9b9b
+					&:first-child
+						padding-left: 0
+					&:last-child
+						padding-right: 0
+		.main-menu
+			background-color: $accent
+			.toggle-mobile-menu
+				background-color: #FFF
+				display: block
+				.mobile-block-menu
+					display: none
+					background-color: #F8F8F8
+					padding: 0
+					margin: 0
+					width: 100%
+					.has-drop-mobile
+						position: relative
+						display: block
+						width: 100%
+						height: 100%
+						&:hover
+							background-color: #efefef
+						ul
+							display: none
+							padding: 0
+							margin: 0
+							width: 100%
+							li
+								padding: 0 10px
+								border-bottom: 1px solid #dbdbdb
+								display: block
+								a
+									font-size: 14px
+									&:hover
+										color: #646464
+								&:hover
+									background-color: #7e7e7e
+						a
+							margin-left: 15px
+						&:before
+							content: ''
+							position: absolute
+							left: 10px
+							top: 16px
+							width: 0
+							height: 0
+							border-left: 5px solid transparent
+							border-right: 5px solid transparent
+							border-top: 5px solid #646464
+							clear: both
+					.open
+						background-color: #efefef
+						a
+							color: $accent
+						&:before
+							border-top-color: $accent
+
+					li
+						list-style-type: none
+						padding: 0 10px
+						display: block
+						a
+							text-decoration: none
+							color: #646464
+							font-size: 16px
+							display: block
+							line-height: 36px
+							&:hover
+								color: $accent
+						&:hover
+							background-color: #FFF
+							&:before
+								border-top-color: $accent
+			.menu
+				padding: 0
+				margin: 0
+				display: inline-block
+				vertical-align: top
+				position: relative
+				li
+					display: inline-block
+					//border-bottom: 4px solid transparent
+					a
+						font-size: 14px
+						line-height: 40px
+						font-weight: bold
+						color: #fff
+						text-transform: uppercase
+						padding: 0 15px
+						display: block
+						text-decoration: none
+						span
+							font-size: 18px
+					ul
+						display: none
+						position: absolute
+						top: 100%
+						left: 0
+						width: 100vw
+						background-color: #d7d7d7
+						li
+							a
+								color: #555555
+								font-weight: normal
+								font-size: 13px
+								text-transform: none
+							&:hover
+								background-color: #acacac
+					&:hover
+						//border-color: $red
+						background-color: #465fa3
+						ul
+							display: block
+			.search-button
+				background-color: $red
+				display: inline-block
+				vertical-align: top
+				float: right
+				cursor: pointer
+				i
+					color: #fff
+					font-size: 18px
+					line-height: 40px
+					padding: 0 15px
+					display: block
+		.main-menu-line
+			display: block
+			width: 100%
+			height: 40px
+			background-color: #d7d7d7
+
 @import "media" // Всегда в конце
