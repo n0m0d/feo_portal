@@ -39,12 +39,15 @@ body
 	max-width: 100%
 	height: auto
 
+.toggle-menu-wrap
+	display: inline-block
+	background-color: #465fa3
+
 .toggle-menu
 	display: inline-block
 	width: 28px
 	height: 15px
 	margin: 17px 15px 8px
-	float: left
 
 .toggle-menu span:after,
 .toggle-menu span:before
@@ -64,11 +67,11 @@ body
 .toggle-menu span:after,
 .toggle-menu span:before
 	width: 100%
-	height: 5px
+	height: 3px
 	background-color: #fff
 	transition: all 0.3s
 	backface-visibility: hidden
-	border-radius: 2px
+	//border-radius: 2px
 
 .toggle-menu.on span
 	background-color: transparent
@@ -263,14 +266,15 @@ body
 		.main-menu
 			background-color: $accent
 			.toggle-mobile-menu
-				background-color: #FFF
+				//background-color: #FFF
 				display: block
 				.mobile-block-menu
 					display: none
-					background-color: #F8F8F8
+					background-color: #465fa3
 					padding: 0
 					margin: 0
 					width: 100%
+					margin-bottom: 15px
 					.has-drop-mobile
 						position: relative
 						display: block
@@ -290,7 +294,7 @@ body
 								a
 									font-size: 14px
 									&:hover
-										color: #646464
+										color: #fff
 								&:hover
 									background-color: #7e7e7e
 						a
@@ -304,7 +308,7 @@ body
 							height: 0
 							border-left: 5px solid transparent
 							border-right: 5px solid transparent
-							border-top: 5px solid #646464
+							border-top: 5px solid #fff
 							clear: both
 					.open
 						background-color: #efefef
@@ -319,7 +323,7 @@ body
 						display: block
 						a
 							text-decoration: none
-							color: #646464
+							color: #fff
 							font-size: 16px
 							display: block
 							line-height: 36px
@@ -341,7 +345,7 @@ body
 					a
 						font-size: 14px
 						line-height: 40px
-						font-weight: bold
+						font-family: "Roboto-Bold", sans-serif
 						color: #fff
 						text-transform: uppercase
 						padding: 0 15px
@@ -369,22 +373,133 @@ body
 						background-color: #465fa3
 						ul
 							display: block
+			.auth-wrap
+				font-size: 0
+				display: inline-block
+				vertical-align: top
+				line-height: 40px
+				margin: 0 15px
+				div
+					display: inline-block
+					a
+						font-size: 13px
+						line-height: 18px
+						color: #fff
+						vertical-align: middle
+						display: inline-block
+				.login
+					padding-right: 15px
+				.reg
+					line-height: 23px
+					padding-left: 15px
 			.search-button
 				background-color: $red
 				display: inline-block
 				vertical-align: top
 				float: right
 				cursor: pointer
+				position: relative
 				i
 					color: #fff
 					font-size: 18px
 					line-height: 40px
 					padding: 0 15px
 					display: block
+				.search-input
+					display: none
+					min-width: 245px
+					font-size: 14px
+					position: absolute
+					top: 0
+					right: 100%
+					padding: 6.5px 15px
+					margin: 0
+					outline: 0
+					border: 1px solid $red
 		.main-menu-line
 			display: block
 			width: 100%
 			height: 40px
 			background-color: #d7d7d7
+
+.main-banners
+	padding: 20px 0
+	.banner-wrap
+		text-align: center
+		a
+			display: inline-block
+
+.section-1
+	padding-bottom: 20px
+	.main-slider
+		height: 380px
+		overflow: hidden
+		position: relative
+		.descr
+			position: absolute
+			top: 45%
+			left: 0
+			padding: 30px 0
+			text-align: center
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%)
+			h1
+				font-size: 30px
+				line-height: 45px
+				color: #fff
+				margin: 0
+			p
+				margin: 0
+				font-size: 14px
+				line-height: 19px
+				color: #fff
+			.time
+				font-size: 12px
+				line-height: 17px
+
+.main-footer
+	min-height: 120px
+	font-size: 0
+	background-color: #343434
+	.main-wrap
+		.footer-block
+			display: inline-block
+			vertical-align: middle
+			float: none
+			.logo-wrap
+				line-height: 120px
+				.logo
+					a
+						font-size: 16px
+						display: block
+			.copy
+				margin: 0
+				color: #898989
+				font-size: 12px
+				line-height: 17px
+			.bot-social
+				.social-title
+					font-size: 14px
+					color: #6a6a6a
+					display: inline-block
+					vertical-align: middle
+				.social-wrap
+					font-size: 0
+					display: inline-block
+					vertical-align: middle
+					a
+						width: 35px
+						height: 35px
+						display: inline-block
+						background-color: #1a1a1a
+						text-align: center
+						border-radius: 50%
+						margin: 0 5px
+						i
+							color: #343434
+							font-size: 22px
+							line-height: 35px
+						&:hover
+							background-color: #262626
+
 
 @import "media" // Всегда в конце

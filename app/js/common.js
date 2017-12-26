@@ -17,4 +17,18 @@ $(function() {
 		return false;
 	});
 
+	$(".fa-search").on("click", function() {
+		$(".search-input").slideToggle();
+		return false;
+	});
+
+	$(".main-slider").slick({
+		dots: false,
+		arrows: false,
+		centerMode: false,
+		infinite: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear'
+	});
 });
