@@ -688,6 +688,33 @@ h3
 				&:last-child
 					margin-bottom: 0
 
+.sliderarrowsmain
+	display: inline-block
+	vertical-align: middle
+	float: right
+	font-size: 0
+	margin-top: 2px
+	div
+		cursor: pointer
+		display: inline-block
+		vertical-align: middle
+		height: 20px
+		width: 16px
+		background-image: url(../img/slider-arrows.svg)
+		transition: all .5s ease
+		opacity: .5
+		&:hover
+			opacity: 1
+	.leftArrow
+		background-position: 0 -5px
+	.rightArrow
+		background-position: -16px -5px
+
+.slider-style-1
+	.info-item
+		&:last-child
+			margin-bottom: 20px
+
 .section-3
 	margin-bottom: 20px
 	.info-block-verticale
@@ -710,6 +737,8 @@ h3
 		vertical-align: middle
 	.link-2
 		float: right
+		margin-top: 2px
+		margin-right: 10px
 
 .block-sticker
 	background-color: #fff

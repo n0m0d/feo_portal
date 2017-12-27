@@ -34,6 +34,43 @@ $(function() {
  		autoplaySpeed: 2000,
 	});
 
+	$(".slider-style-1").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		centerMode: false,
+		rows: 2,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					arrows: false,
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					arrows: false,
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+
+	$('.leftArrow').on('click', function() {
+		var sliderId = $(this).data("sliderId");
+		$('#' + sliderId).slick("slickPrev");
+	});
+
+	$('.rightArrow').on('click', function() {
+		var sliderId = $(this).data("sliderId");
+		$('#' + sliderId).slick("slickNext");
+	});
+
 	function sliderHeight() {
 		var heightNewsBlock = $("#news-slider-block").height();
 		var heightItemsBlock = $("#news-items-block").height();
