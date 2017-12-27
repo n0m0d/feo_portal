@@ -33,4 +33,19 @@ $(function() {
 		autoplay: true,
  		autoplaySpeed: 2000,
 	});
+
+	function sliderHeight() {
+		var heightNewsBlock = $("#news-slider-block").height();
+		var heightItemsBlock = $("#news-items-block").height();
+		if(document.documentElement.clientWidth > 767) {
+			$(".slick-slide").css({"height":heightNewsBlock});
+		}
+		if(document.documentElement.clientWidth > 991) {
+			$(".info-block-verticale .info-item").css({"height":heightItemsBlock});
+		}
+	}sliderHeight();
+
+	window.onresize = function() {
+		sliderHeight();
+	}
 });

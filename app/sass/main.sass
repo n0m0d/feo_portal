@@ -33,6 +33,13 @@ body
 	line-height: 1.75
 	font-family: $default-font
 	overflow-x: hidden
+	background-color: #f2f2f2
+
+.npl
+	padding-left: 0
+
+.npr
+	padding-right: 0
 
 .container
 	padding: 0
@@ -93,6 +100,7 @@ body
 .main-header
 	min-height: 115px
 	font-size: 0
+	background-color: #FFF
 	.main-wrap
 		.sect-1
 			width: 17%
@@ -439,6 +447,8 @@ body
 		height: auto
 		overflow: hidden
 		position: relative
+		img
+			width: 100%
 		.descr
 			position: absolute
 			top: 0
@@ -462,6 +472,7 @@ body
 				overflow: hidden
 				display: inline-block
 				text-overflow: ellipsis
+				font-family: "Minion-Regular"
 			p
 				margin: 0
 				font-size: 14px
@@ -485,6 +496,174 @@ body
 					display: inline-block
 					vertical-align: bottom
 					margin-right: 5px
+	.slider-news
+		background-color: #484848
+		padding: 20px 20px 0 20px
+		.single-news
+			border-bottom: 1px solid #676767
+			padding-top: 15px
+			.tags
+				font-size: 0
+				a
+					margin-right: 5px
+					color: $red
+					font-size: 12px
+					line-height: 17px
+					text-transform: uppercase
+					&:last-child
+						margin-right: 0
+			.news-descr
+				margin: 0
+				padding: 15px 0
+				color: #fff
+				font-size: 18px
+				line-height: 23px
+				display: block
+				text-decoration: none
+				font-family: "Minion-Regular"
+			&:first-child
+				padding-top: 0
+			&:last-child
+				border-bottom: 0
+
+.section-2
+	.info-block-horizontale
+		font-size: 0
+		.info-item
+			background-color: #FFF
+			margin-bottom: 20px
+			.img-wrap
+				display: inline-block
+				width: 100%
+				overflow: hidden
+				img
+					width: 100%
+			.content
+				display: inline-block
+				padding: 15px 15px 15px 0
+				.tags
+					font-size: 0
+					a
+						margin-right: 5px
+						color: $red
+						font-size: 12px
+						line-height: 17px
+						text-transform: uppercase
+						&:last-child
+							margin-right: 0
+				.info-descr
+					max-height: 86px
+					overflow: hidden
+					margin: 15px 0
+					display: block
+					text-decoration: none
+					span
+						color: #2e2e2e
+						font-size: 24px
+						line-height: 29px
+						font-family: "Minion-Regular"
+				.time
+					display: inline-block
+					.text-clock
+						font-size: 12px
+						line-height: 17px
+						color: $accent
+						display: inline-block
+						vertical-align: bottom
+					.icon-clock
+						color: $accent
+						font-size: 16px
+						line-height: 17px
+						display: inline-block
+						vertical-align: bottom
+						margin-right: 5px
+				.views
+					display: inline-block
+					float: right
+					.text-views
+						font-size: 12px
+						line-height: 17px
+						color: $accent
+						display: inline-block
+						vertical-align: bottom
+					.icon-eye
+						color: $accent
+						font-size: 16px
+						line-height: 17px
+						display: inline-block
+						vertical-align: bottom
+						margin-right: 5px
+			&:last-child
+				margin-bottom: 0
+	.info-item-wrap
+		.info-block-verticale
+			font-size: 0
+			.info-item
+				background-color: #FFF
+				margin-bottom: 20px
+				.img-wrap
+					display: inline-block
+					width: 100%
+					overflow: hidden
+					img
+						width: 100%
+				.content
+					display: inline-block
+					padding: 15px
+					.tags
+						font-size: 0
+						a
+							margin-right: 5px
+							color: $red
+							font-size: 12px
+							line-height: 17px
+							text-transform: uppercase
+							&:last-child
+								margin-right: 0
+					.info-descr
+						max-height: 86px
+						overflow: hidden
+						margin: 15px 0
+						display: block
+						text-decoration: none
+						span
+							color: #2e2e2e
+							font-size: 24px
+							line-height: 29px
+							font-family: "Minion-Regular"
+					.time
+						display: inline-block
+						.text-clock
+							font-size: 12px
+							line-height: 17px
+							color: $accent
+							display: inline-block
+							vertical-align: bottom
+						.icon-clock
+							color: $accent
+							font-size: 16px
+							line-height: 17px
+							display: inline-block
+							vertical-align: bottom
+							margin-right: 5px
+					.views
+						display: inline-block
+						float: right
+						.text-views
+							font-size: 12px
+							line-height: 17px
+							color: $accent
+							display: inline-block
+							vertical-align: bottom
+						.icon-eye
+							color: $accent
+							font-size: 16px
+							line-height: 17px
+							display: inline-block
+							vertical-align: bottom
+							margin-right: 5px
+				&:last-child
+					margin-bottom: 0
 
 .main-footer
 	min-height: 120px
