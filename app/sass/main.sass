@@ -445,15 +445,19 @@ h3
 
 /********** BANNERS **********/
 .main-banners
-	padding: 20px 0
+	padding: 20px 0 0 0
 	.banner-wrap
 		text-align: center
+		max-height: 90px
+		overflow: hidden
 		a
 			display: inline-block
 
 .vertical-banners
 	.banner-wrap
 		text-align: center
+		max-height: 380px
+		overflow: hidden
 		a
 			display: inline-block
 
@@ -604,6 +608,7 @@ h3
 	padding: 15px
 	font-size: 0
 	margin-bottom: 20px
+	margin-top: 20px
 	h2
 		display: inline-block
 		margin-right: 20px
@@ -623,11 +628,42 @@ h3
 .slider-style-1
 	.slick-list
 		margin: 0 -10px
+		margin-bottom: -20px
 		.info-item
 			&:last-child
 				margin-bottom: 20px
 		.slick-slide
 			margin: 0px 10px
+
+/********** SLIDER STYLE 2 **********/
+.slider-style-2
+	.slick-list
+		margin: 0 -10px
+		.item
+			position: relative
+			display: inline-block
+			margin: 0px 10px
+			.descr
+				display: block
+				text-align: center
+				font-size: 0
+				position: absolute
+				bottom: 0
+				left: 0
+				width: 100%
+				background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%)
+				.title
+					display: inline-block
+					font-size: 18px
+					line-height: 23px
+					color: #fff
+					width: 100%
+				.date
+					width: 100%
+					display: inline-block
+					font-size: 11px
+					line-height: 16px
+					color: #888888
 
 /********** SLIDER CONTROLS **********/
 .sliderarrowsmain
@@ -687,6 +723,7 @@ h3
 			height: auto
 			overflow: hidden
 			position: relative
+			margin-top: 20px
 			img
 				width: 100%
 			.descr
@@ -738,6 +775,7 @@ h3
 						margin-right: 5px
 	.right-slider-col
 		padding-left: 0
+		margin-top: 20px
 		.slider-news
 			background-color: #484848
 			padding: 20px 20px 0 20px
