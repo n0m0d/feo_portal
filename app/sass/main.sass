@@ -365,6 +365,8 @@ h3
 				display: inline-block
 				vertical-align: top
 				position: relative
+				.active
+					background-color: #465fa3
 				li
 					display: inline-block
 					//border-bottom: 4px solid transparent
@@ -631,6 +633,28 @@ h3
 		margin-top: 2px
 		margin-right: 10px
 
+/********** BLUE BOX **********/
+.blue-box
+	background-color: #FFF
+	margin-top: 20px
+	.blue-title
+		background-color: $accent
+		h2
+			color: #fff
+			line-height: 45px
+			padding: 0 20px
+	.blue-content
+		padding: 20px
+
+/********** USER SURVEY **********/
+.user-survey-wrap
+	font-size: 0
+	.title
+		font-family: "Roboto-Bold", sans-serif
+		font-size: 14px
+		color: $accent
+		line-height: 19px
+
 /********** SLIDER STYLE 1 **********/
 .slider-style-1
 	.slick-list
@@ -675,6 +699,18 @@ h3
 					font-size: 11px
 					line-height: 16px
 					color: #888888
+
+/********** SLIDER STYLE 3 **********/
+.slider-style-3
+	margin-bottom: 0 !important
+	.slick-list
+		margin: 0 -10px
+		margin-bottom: -20px
+		.info-item
+			&:last-child
+				margin-bottom: 20px
+		.slick-slide
+			margin: 0px 10px
 
 /********** SLIDER CONTROLS **********/
 .sliderarrowsmain
@@ -735,7 +771,7 @@ h3
 	font-size: 0
 	.img-wrap
 		text-align: center
-		max-height: 380px
+		max-height: 407px
 		overflow: hidden
 		a
 			display: inline-block 
