@@ -31,15 +31,14 @@
 			.sect-4
 				width: 35%
 
-	.section-2
-		.news-block-horizontale
-			.news-item
-				.content
-					.news-descr
-						max-height: 50px
-						span
-							font-size: 20px
-							line-height: 25px
+	.news-block-horizontale
+		.news-item
+			.content
+				.news-descr
+					max-height: 50px
+					span
+						font-size: 20px
+						line-height: 25px
 
 @media only screen and (max-width : 1050px)
 	.main-header
@@ -71,18 +70,92 @@
 			.sect-4
 				width: 40%
 
-	.section-2
-		.info-item-wrap
-			.info-block-verticale
-				.info-item
-					.content
-						.info-descr
-							span
-								font-size: 20px
+	//Уменьшаем шрифт
+	.info-block-verticale
+		.info-item
+			.content
+				.info-descr
+					span
+						font-size: 20px
+
+	//Ротация вертикального блока в горизонтальный
+	.info-block-horizontale
+		font-size: 0
+		.info-item
+			background-color: #FFF
+			margin-bottom: 20px
+			.img-wrap
+				display: inline-block
+				width: 100%
+				overflow: hidden
+				max-height: 168px
+				img
+					width: 100%
+			.content
+				display: inline-block
+				padding: 15px
+				.tags
+					font-size: 0
+					a
+						margin-right: 5px
+						color: $red
+						font-size: 12px
+						line-height: 17px
+						text-transform: uppercase
+						&:last-child
+							margin-right: 0
+				.info-descr
+					max-height: 86px
+					overflow: hidden
+					margin: 15px 0
+					display: block
+					text-decoration: none
+					span
+						color: #2e2e2e
+						font-size: 20px
+						line-height: 29px
+						font-family: "Minion-Regular"
+				.time
+					display: inline-block
+					.text-clock
+						font-size: 12px
+						line-height: 17px
+						color: $accent
+						display: inline-block
+						vertical-align: bottom
+					.icon-clock
+						color: $accent
+						font-size: 16px
+						line-height: 17px
+						display: inline-block
+						vertical-align: bottom
+						margin-right: 5px
+				.views
+					display: inline-block
+					float: right
+					.text-views
+						font-size: 12px
+						line-height: 17px
+						color: $accent
+						display: inline-block
+						vertical-align: bottom
+					.icon-eye
+						color: $accent
+						font-size: 16px
+						line-height: 17px
+						display: inline-block
+						vertical-align: bottom
+						margin-right: 5px
+			&:last-child
+				margin-bottom: 0
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 	/**/
+
+	h2
+		font-size: 18px
+
 	.main-header
 		.main-wrap
 			.sect-1

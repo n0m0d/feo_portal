@@ -96,7 +96,6 @@ h3
 	background-color: #fff
 	transition: all 0.3s
 	backface-visibility: hidden
-	//border-radius: 2px
 
 .toggle-menu.on span
 	background-color: transparent
@@ -111,7 +110,7 @@ h3
 	opacity: 1
 	visibility: visible
 
-//Шапка сайта
+/********** HEADER START **********/
 .main-header
 	min-height: 115px
 	font-size: 0
@@ -129,7 +128,6 @@ h3
 						display: block
 		.sect-2
 			display: inline-block
-			//padding: 0 80px 0 40px
 			vertical-align: middle
 			width: 20%
 			.auth-wrap
@@ -189,7 +187,6 @@ h3
 		.sect-3
 			display: inline-block
 			vertical-align: middle
-			//text-align: right
 			width: 27%
 			.add-listing
 				display: inline-block
@@ -206,7 +203,6 @@ h3
 					vertical-align: middle
 			.items-wrap
 				margin-top: 10px
-				//text-align: left
 				.item
 					display: inline-block
 					padding: 0 10px
@@ -250,7 +246,6 @@ h3
 			width: 36%
 			.items-wrap
 				margin-top: 10px
-				//text-align: left
 				display: none
 				.item
 					display: inline-block
@@ -292,7 +287,6 @@ h3
 		.main-menu
 			background-color: $accent
 			.toggle-mobile-menu
-				//background-color: #FFF
 				display: block
 				.mobile-block-menu
 					display: none
@@ -300,7 +294,6 @@ h3
 					padding: 0
 					margin: 0
 					width: 100%
-					//margin-bottom: 15px
 					.has-drop-mobile
 						position: relative
 						display: block
@@ -448,7 +441,9 @@ h3
 			width: 100%
 			height: 40px
 			background-color: #d7d7d7
+/********** HEADER END **********/
 
+/********** BANNERS **********/
 .main-banners
 	padding: 20px 0
 	.banner-wrap
@@ -461,6 +456,229 @@ h3
 		text-align: center
 		a
 			display: inline-block
+
+/********** INFO BLOCK horizontale **********/
+.info-block-horizontale
+	font-size: 0
+	.info-item
+		background-color: #FFF
+		margin-bottom: 20px
+		.img-wrap
+			display: inline-block
+			width: 100%
+			overflow: hidden
+			img
+				width: 100%
+		.content
+			display: inline-block
+			padding: 15px 15px 15px 0
+			.tags
+				font-size: 0
+				a
+					margin-right: 5px
+					color: $red
+					font-size: 12px
+					line-height: 17px
+					text-transform: uppercase
+					&:last-child
+						margin-right: 0
+			.info-descr
+				max-height: 86px
+				overflow: hidden
+				margin: 15px 0
+				display: block
+				text-decoration: none
+				span
+					color: #2e2e2e
+					font-size: 24px
+					line-height: 29px
+					font-family: "Minion-Regular"
+			.time
+				display: inline-block
+				.text-clock
+					font-size: 12px
+					line-height: 17px
+					color: $accent
+					display: inline-block
+					vertical-align: bottom
+				.icon-clock
+					color: $accent
+					font-size: 16px
+					line-height: 17px
+					display: inline-block
+					vertical-align: bottom
+					margin-right: 5px
+			.views
+				display: inline-block
+				float: right
+				.text-views
+					font-size: 12px
+					line-height: 17px
+					color: $accent
+					display: inline-block
+					vertical-align: bottom
+				.icon-eye
+					color: $accent
+					font-size: 16px
+					line-height: 17px
+					display: inline-block
+					vertical-align: bottom
+					margin-right: 5px
+		&:last-child
+			margin-bottom: 0
+
+/********** INFO BLOCK verticale **********/
+.info-block-verticale
+	font-size: 0
+	.info-item
+		background-color: #FFF
+		margin-bottom: 20px
+		.img-wrap
+			display: inline-block
+			width: 100%
+			overflow: hidden
+			max-height: 168px
+			img
+				width: 100%
+		.content
+			display: inline-block
+			padding: 15px
+			.tags
+				font-size: 0
+				a
+					margin-right: 5px
+					color: $red
+					font-size: 12px
+					line-height: 17px
+					text-transform: uppercase
+					&:last-child
+						margin-right: 0
+			.info-descr
+				max-height: 86px
+				overflow: hidden
+				margin: 15px 0
+				display: block
+				text-decoration: none
+				span
+					color: #2e2e2e
+					font-size: 24px
+					line-height: 29px
+					font-family: "Minion-Regular"
+			.time
+				display: inline-block
+				.text-clock
+					font-size: 12px
+					line-height: 17px
+					color: $accent
+					display: inline-block
+					vertical-align: bottom
+				.icon-clock
+					color: $accent
+					font-size: 16px
+					line-height: 17px
+					display: inline-block
+					vertical-align: bottom
+					margin-right: 5px
+			.views
+				display: inline-block
+				float: right
+				.text-views
+					font-size: 12px
+					line-height: 17px
+					color: $accent
+					display: inline-block
+					vertical-align: bottom
+				.icon-eye
+					color: $accent
+					font-size: 16px
+					line-height: 17px
+					display: inline-block
+					vertical-align: bottom
+					margin-right: 5px
+		&:last-child
+			margin-bottom: 0
+
+/********** TITLE BLOCK **********/
+.title-block-slider, .title-block
+	background-color: #FFF
+	padding: 15px
+	font-size: 0
+	margin-bottom: 20px
+	h2
+		display: inline-block
+		margin-right: 20px
+		vertical-align: middle
+	a
+		font-size: 14px
+		line-height: 19px
+		color: #969696
+		display: inline-block
+		vertical-align: middle
+	.link-2
+		float: right
+		margin-top: 2px
+		margin-right: 10px
+
+/********** SLIDER STYLE 1 **********/
+.slider-style-1
+	.slick-list
+		margin: 0 -10px
+		.info-item
+			&:last-child
+				margin-bottom: 20px
+		.slick-slide
+			margin: 0px 10px
+
+/********** SLIDER CONTROLS **********/
+.sliderarrowsmain
+	display: inline-block
+	vertical-align: middle
+	float: right
+	font-size: 0
+	margin-top: 2px
+	div
+		cursor: pointer
+		display: inline-block
+		vertical-align: middle
+		height: 20px
+		width: 16px
+		background-image: url(../img/slider-arrows.svg)
+		transition: all .5s ease
+		opacity: .5
+		&:hover
+			opacity: 1
+	.leftArrow
+		background-position: 0 -5px
+	.rightArrow
+		background-position: -16px -5px
+
+/********** STICKER BlOCK **********/
+.block-sticker
+	background-color: #fff
+	padding: 25px
+	font-size: 0
+	margin-bottom: 20px
+	p
+		margin: 15px 0
+		font-size: 14px
+		line-height: 19px
+		color: #828282
+	.phone
+		.icon-phone
+			font-size: 18px
+			line-height: 23px
+			color: $accent
+			display: inline-block
+			vertical-align: middle
+			margin-right: 5px
+		.number
+			font-size: 14px
+			line-height: 23px
+			color: #2f2f2f
+			display: inline-block
+			vertical-align: middle
+
+/********** CONTENT START **********/
 .section-1
 	padding-bottom: 20px
 	.left-slider-col
@@ -550,228 +768,18 @@ h3
 				&:last-child
 					border-bottom: 0
 
-.info-block-horizontale
-		font-size: 0
-		.info-item
-			background-color: #FFF
-			margin-bottom: 20px
-			.img-wrap
-				display: inline-block
-				width: 100%
-				overflow: hidden
-				img
-					width: 100%
-			.content
-				display: inline-block
-				padding: 15px 15px 15px 0
-				.tags
-					font-size: 0
-					a
-						margin-right: 5px
-						color: $red
-						font-size: 12px
-						line-height: 17px
-						text-transform: uppercase
-						&:last-child
-							margin-right: 0
-				.info-descr
-					max-height: 86px
-					overflow: hidden
-					margin: 15px 0
-					display: block
-					text-decoration: none
-					span
-						color: #2e2e2e
-						font-size: 24px
-						line-height: 29px
-						font-family: "Minion-Regular"
-				.time
-					display: inline-block
-					.text-clock
-						font-size: 12px
-						line-height: 17px
-						color: $accent
-						display: inline-block
-						vertical-align: bottom
-					.icon-clock
-						color: $accent
-						font-size: 16px
-						line-height: 17px
-						display: inline-block
-						vertical-align: bottom
-						margin-right: 5px
-				.views
-					display: inline-block
-					float: right
-					.text-views
-						font-size: 12px
-						line-height: 17px
-						color: $accent
-						display: inline-block
-						vertical-align: bottom
-					.icon-eye
-						color: $accent
-						font-size: 16px
-						line-height: 17px
-						display: inline-block
-						vertical-align: bottom
-						margin-right: 5px
-			&:last-child
-				margin-bottom: 0
-
-.info-block-verticale
-			font-size: 0
-			.info-item
-				background-color: #FFF
-				margin-bottom: 20px
-				.img-wrap
-					display: inline-block
-					width: 100%
-					overflow: hidden
-					img
-						width: 100%
-				.content
-					display: inline-block
-					padding: 15px
-					.tags
-						font-size: 0
-						a
-							margin-right: 5px
-							color: $red
-							font-size: 12px
-							line-height: 17px
-							text-transform: uppercase
-							&:last-child
-								margin-right: 0
-					.info-descr
-						max-height: 86px
-						overflow: hidden
-						margin: 15px 0
-						display: block
-						text-decoration: none
-						span
-							color: #2e2e2e
-							font-size: 24px
-							line-height: 29px
-							font-family: "Minion-Regular"
-					.time
-						display: inline-block
-						.text-clock
-							font-size: 12px
-							line-height: 17px
-							color: $accent
-							display: inline-block
-							vertical-align: bottom
-						.icon-clock
-							color: $accent
-							font-size: 16px
-							line-height: 17px
-							display: inline-block
-							vertical-align: bottom
-							margin-right: 5px
-					.views
-						display: inline-block
-						float: right
-						.text-views
-							font-size: 12px
-							line-height: 17px
-							color: $accent
-							display: inline-block
-							vertical-align: bottom
-						.icon-eye
-							color: $accent
-							font-size: 16px
-							line-height: 17px
-							display: inline-block
-							vertical-align: bottom
-							margin-right: 5px
-				&:last-child
-					margin-bottom: 0
-
-.sliderarrowsmain
-	display: inline-block
-	vertical-align: middle
-	float: right
-	font-size: 0
-	margin-top: 2px
-	div
-		cursor: pointer
-		display: inline-block
-		vertical-align: middle
-		height: 20px
-		width: 16px
-		background-image: url(../img/slider-arrows.svg)
-		transition: all .5s ease
-		opacity: .5
-		&:hover
-			opacity: 1
-	.leftArrow
-		background-position: 0 -5px
-	.rightArrow
-		background-position: -16px -5px
-
-.slider-style-1
-	.info-item
-		&:last-child
-			margin-bottom: 20px
-
 .section-3
 	margin-bottom: 20px
 	.info-block-verticale
 		margin-bottom: 20px
+/********** CONTENT END **********/
 
-.title-block-slider, .title-block
-	background-color: #FFF
-	padding: 15px
-	font-size: 0
-	margin-bottom: 20px
-	h2
-		display: inline-block
-		margin-right: 20px
-		vertical-align: middle
-	a
-		font-size: 14px
-		line-height: 19px
-		color: #969696
-		display: inline-block
-		vertical-align: middle
-	.link-2
-		float: right
-		margin-top: 2px
-		margin-right: 10px
-
-.block-sticker
-	background-color: #fff
-	padding: 25px
-	font-size: 0
-	margin-bottom: 20px
-	p
-		margin: 15px 0
-		font-size: 14px
-		line-height: 19px
-		color: #828282
-	.phone
-		.icon-phone
-			font-size: 18px
-			line-height: 23px
-			color: $accent
-			display: inline-block
-			vertical-align: middle
-			margin-right: 5px
-		.number
-			font-size: 14px
-			line-height: 23px
-			color: #2f2f2f
-			display: inline-block
-			vertical-align: middle
-
-
+/********** FOOTER START **********/
 .main-footer
 	min-height: 120px
 	font-size: 0
 	background-color: #343434
 	.main-wrap
-		//padding: 0 15px
 		.footer-block
 			display: inline-block
 			vertical-align: middle
@@ -811,6 +819,6 @@ h3
 							line-height: 35px
 						&:hover
 							background-color: #262626
-
+/********** FOOTER END **********/
 
 @import "media" // Всегда в конце
