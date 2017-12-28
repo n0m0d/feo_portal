@@ -132,4 +132,12 @@ $(function() {
 	window.onresize = function() {
 		sliderHeight();
 	}
+
+	$(window).on("scroll", function() {
+		if ($(window).scrollTop() > 100) {
+			$(".main-menu").addClass("header-scroll");
+		} else {
+			$(".main-menu").removeClass("header-scroll");
+		}
+	});
 });
