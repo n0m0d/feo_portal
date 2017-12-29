@@ -668,6 +668,62 @@ h3
 				font-size: 14px
 				line-height: 19px
 
+/********** MAIN SLIDER **********/
+.main-slider
+				height: auto
+				overflow: hidden
+				position: relative
+				margin-top: 20px
+				img
+					width: 100%
+				.descr
+					position: absolute
+					top: 0
+					left: 0
+					padding: 30px 15px
+					text-align: center
+					width: 100%
+					background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%)
+					height: 100%
+					display: flex
+					flex-direction: column
+					justify-content: flex-end
+					align-items: center
+					h1
+						font-size: 30px
+						line-height: 45px
+						color: #fff
+						margin: 0
+						max-width: 600px
+						white-space: nowrap
+						overflow: hidden
+						display: inline-block
+						text-overflow: ellipsis
+						font-family: "Minion-Regular"
+					p
+						margin: 0
+						font-size: 14px
+						line-height: 19px
+						color: #fff
+						max-height: 60px
+						overflow: hidden
+						text-overflow: ellipsis
+					.time
+						line-height: 113px
+						.text-clock
+							font-size: 12px
+							line-height: 17px
+							color: #bababa
+							display: inline-block
+							vertical-align: bottom
+						.icon-clock
+							color: #bababa
+							font-size: 16px
+							line-height: 17px
+							display: inline-block
+							vertical-align: bottom
+							margin-right: 5px
+
 /********** SLIDER STYLE 1 **********/
 .slider-style-1
 	.slick-list
@@ -832,101 +888,62 @@ h3
 			line-height: 21px
 
 /********** CONTENT START **********/
-.section-1
-	padding-bottom: 20px
-	.left-slider-col
-		padding-right: 0
-		.main-slider
-			height: auto
-			overflow: hidden
-			position: relative
+.main-index
+	.section-1
+		padding-bottom: 20px
+		.left-slider-col
+			padding-right: 0
+		.right-slider-col
+			padding-left: 0
 			margin-top: 20px
-			img
-				width: 100%
-			.descr
-				position: absolute
-				top: 0
-				left: 0
-				padding: 30px 15px
-				text-align: center
-				width: 100%
-				background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%)
-				height: 100%
-				display: flex
-				flex-direction: column
-				justify-content: flex-end
-				align-items: center
-				h1
-					font-size: 30px
-					line-height: 45px
-					color: #fff
-					margin: 0
-					max-width: 600px
-					white-space: nowrap
-					overflow: hidden
-					display: inline-block
-					text-overflow: ellipsis
-					font-family: "Minion-Regular"
-				p
-					margin: 0
-					font-size: 14px
-					line-height: 19px
-					color: #fff
-					max-height: 60px
-					overflow: hidden
-					text-overflow: ellipsis
-				.time
-					line-height: 113px
-					.text-clock
-						font-size: 12px
-						line-height: 17px
-						color: #bababa
-						display: inline-block
-						vertical-align: bottom
-					.icon-clock
-						color: #bababa
-						font-size: 16px
-						line-height: 17px
-						display: inline-block
-						vertical-align: bottom
-						margin-right: 5px
-	.right-slider-col
-		padding-left: 0
-		margin-top: 20px
-		.slider-news
-			background-color: #484848
-			padding: 20px 20px 0 20px
-			.single-news
-				border-bottom: 1px solid #676767
-				padding-top: 15px
-				.tags
-					font-size: 0
-					a
-						margin-right: 5px
-						color: $red
-						font-size: 12px
-						line-height: 17px
-						text-transform: uppercase
-						&:last-child
-							margin-right: 0
-				.news-descr
-					margin: 0
-					padding: 15px 0
-					color: #fff
-					font-size: 18px
-					line-height: 23px
-					display: block
-					text-decoration: none
-					font-family: "Minion-Regular"
-				&:first-child
-					padding-top: 0
-				&:last-child
-					border-bottom: 0
+			.slider-news
+				background-color: #484848
+				padding: 20px 20px 0 20px
+				.single-news
+					border-bottom: 1px solid #676767
+					padding-top: 15px
+					.tags
+						font-size: 0
+						a
+							margin-right: 5px
+							color: $red
+							font-size: 12px
+							line-height: 17px
+							text-transform: uppercase
+							&:last-child
+								margin-right: 0
+					.news-descr
+						margin: 0
+						padding: 15px 0
+						color: #fff
+						font-size: 18px
+						line-height: 23px
+						display: block
+						text-decoration: none
+						font-family: "Minion-Regular"
+					&:first-child
+						padding-top: 0
+					&:last-child
+						border-bottom: 0
 
-.section-3
-	margin-bottom: 20px
-	.info-block-verticale
+	.section-3
 		margin-bottom: 20px
+		.info-block-verticale
+			margin-bottom: 20px
+
+.main-news
+	.section-1
+		.left-slider-col
+			.main-slider
+				margin-top: 0
+				margin-bottom: 20px
+	.section-2
+		//margin-top: 20px
+		margin-bottom: 20px
+		#news-items-block
+			margin-top: 20px
+		.info-item-wrap
+			margin-top: 20px
 /********** CONTENT END **********/
 
 /********** FOOTER START **********/
