@@ -225,7 +225,6 @@ $(function() {
 		var heightItemsBlock = $("#news-items-block").height();
 		var heightItemsBlock1 = (heightItemsBlock / 2) - 10;
 
-		console.log(heightItemsBlock1);
 		if(document.documentElement.clientWidth > 767) {
 			$(".main-slider .slick-slide").css({"height":heightNewsBlock});
 		}

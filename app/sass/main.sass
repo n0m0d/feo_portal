@@ -35,6 +35,12 @@ body
 	overflow-x: hidden
 	background-color: #f2f2f2
 
+h1
+	font-size: 32px
+	line-height: 37px
+	color: #171717
+	margin: 20px 0
+
 h2
 	font-family: "Roboto-Bold", sans-serif
 	font-size: 20px
@@ -455,12 +461,13 @@ h3
 /********** BANNERS **********/
 .main-banners
 	padding: 20px 0 0 0
-	.banner-wrap
-		text-align: center
-		max-height: 90px
-		overflow: hidden
-		a
-			display: inline-block
+
+.banner-wrap
+	text-align: center
+	max-height: 90px
+	overflow: hidden
+	a
+		display: inline-block
 
 .vertical-banners
 	.banner-wrap
@@ -667,6 +674,18 @@ h3
 				color: #969696
 				font-size: 14px
 				line-height: 19px
+
+/********** TAGS **********/
+.tags
+	font-size: 0
+	a
+		margin-right: 5px
+		color: $red
+		font-size: 12px
+		line-height: 17px
+		text-transform: uppercase
+		&:last-child
+			margin-right: 0
 
 /********** MAIN SLIDER **********/
 .main-slider
@@ -902,16 +921,6 @@ h3
 				.single-news
 					border-bottom: 1px solid #676767
 					padding-top: 15px
-					.tags
-						font-size: 0
-						a
-							margin-right: 5px
-							color: $red
-							font-size: 12px
-							line-height: 17px
-							text-transform: uppercase
-							&:last-child
-								margin-right: 0
 					.news-descr
 						margin: 0
 						padding: 15px 0
@@ -944,6 +953,269 @@ h3
 			margin-top: 20px
 		.info-item-wrap
 			margin-top: 20px
+		.blue-box
+			margin-top: 0
+			margin-bottom: 20px
+			.blue-title
+				h2
+					font-size: 16px
+					text-align: center
+			.blue-content
+				.item
+					margin-bottom: 20px
+					padding-bottom: 20px
+					border-bottom: 1px solid #f2f2f2
+					.item-title
+						h3
+							font-size: 18px
+							line-height: 23px
+							font-family: "Minion-Regular"
+							max-height: 46px
+							overflow: hidden
+					.item-content
+						p
+							margin: 20px 0
+							font-size: 14px
+							color: #afafaf
+							line-height: 19px
+							max-height: 76px
+							overflow: hidden
+					.item-foot
+						.time
+							font-size: 0
+							span
+								color: #afafaf
+								vertical-align: middle
+							.icon-clock
+								font-size: 16px
+								line-height: 17px
+								margin-right: 5px
+							.text-clock
+								font-size: 12px
+								line-height: 17px
+					&:last-child
+						margin-bottom: 0
+						border-bottom: none
+						padding-bottom: 0
+
+.main-news-page
+	.section-1
+		.vertical-banners
+			margin-top: 20px
+		.read-more
+			background-color: #FFF
+			margin-bottom: 20px
+			padding: 20px
+			h2
+				margin-bottom: 20px
+			.item-wrap
+				border-bottom: 1px solid #f2f2f2
+				padding-bottom: 20px
+				margin-bottom: 20px
+				.item
+					display: block
+					color: #2f2f2f
+					font-size: 16px
+					line-height: 21px
+				&:last-child
+					border: none
+					padding-bottom: 0
+					margin-bottom: 0
+		.post-wrap
+			background-color: #FFF
+			margin-top: 20px
+			margin-bottom: 20px
+			padding: 20px
+			.time, .views
+				display: inline-block
+				span
+					vertical-align: middle
+					color: #828282
+				.icon-clock, .icon-eye
+					font-size: 19px
+					line-height: 19px
+					margin-right: 5px
+				.text-clock, .text-views
+					font-size: 14px
+					line-height: 19px
+			.time
+				margin-right: 20px
+			.fotorama
+				margin-top: 20px
+				margin-left: -20px
+				margin-right: -20px
+			.content-wrap
+				p
+					font-size: 16px
+					line-height: 21px
+					color: #171717
+					margin: 20px 0
+				.quote-text
+					background-color: #f2f2f2
+					padding: 35px
+					display: block
+					font-size: 16px
+					line-height: 21px
+					color: #171717
+					position: relative
+					overflow: hidden
+					&::after
+						content: ''
+						display: block
+						position: absolute
+						top: -15px
+						right: 0
+						width: 75px
+						height: 75px
+						background-image: url("/img/two-quotes.svg")
+						background-position: center center
+						background-size: cover
+						background-repeat: no-repeat
+						opacity: 0.08
+
+		.fotorama__thumb-border
+			border-color: $accent
+
+		.comments-wrap
+			background-color: #FFF
+			margin-top: 20px
+			margin-bottom: 20px
+			padding: 20px
+			text-align: center
+			h2
+				text-align: left
+			div
+				vertical-align: middle
+			.ava-wrap
+				width: 50px
+				height: 50px
+				border-radius: 100%
+				overflow: hidden
+				display: inline-block
+				margin-right: 20px
+				img
+					width: 50px
+					height: 50px
+			.add-comment
+				margin-top: 20px
+				font-size: 0
+				.left-col
+					width: 17%
+					display: inline-block
+				.right-col
+					width: 83%
+					display: inline-block
+					.button
+						background-color: #f2f2f2
+						text-align: center
+						display: block
+						transition: all .5s ease
+						a
+							display: block
+							font-size: 16px
+							line-height: 50px
+							color: #828282
+							text-decoration: none
+						&:hover
+							background-color: #d8d8d8
+			.comments
+				.comment
+					margin-top: 20px
+					.left-col
+						width: 17%
+						display: inline-block
+						text-align: right
+					.right-col
+						width: 83%
+						display: inline-block
+						.user-comment
+							display: inline-block
+							background-color: #f2f2f2
+							padding: 20px
+							position: relative
+							&::before
+								content: ''
+								width: 20px
+								height: 20px
+								display: block
+								position: absolute
+								transform: rotate(45deg)
+								background-color: #f2f2f2
+								z-index: 0
+								left: -10px
+								top: calc(50% - 10px)
+							.head
+								display: block
+								height: 19px
+								.name
+									color: #2f2f2f
+									font-family: "Roboto-Bold", sans-serif
+									font-size: 14px
+									line-height: 19px
+									display: inline-block
+									float: left
+								.time
+									color: #b4b4b4
+									font-size: 14px
+									line-height: 19px
+									display: inline-block
+									float: right
+							.content
+								text-align: left
+								padding-top: 10px
+								padding-bottom: 10px
+								p
+									margin: 0
+									font-size: 14px
+									line-height: 19px
+									color: #2f2f2f
+							.foot
+								height: 19px
+								.review
+									display: inline-block
+									float: left
+									a
+										font-size: 14px
+										line-height: 19px
+										color: $accent
+								.likes
+									display: inline-block
+									float: right
+									span
+										line-height: 19px
+										display: inline-block
+										vertical-align: middle
+									.icon-like
+										font-size: 19px
+										margin-right: 5px
+									.text-like
+										font-size: 14px
+				.review
+					.left-col
+						width: 27%
+					.right-col
+						width: 73%
+		.news-today
+			background-color: #FFF
+			margin-top: 20px
+			margin-bottom: 20px
+			padding: 20px
+			ul
+				list-style-type: none
+				margin: 10px 0 0 0
+				padding: 0
+				li
+					font-size: 16px
+					line-height: 21px
+					margin-bottom: 5px
+					span
+						color: $red
+						margin-right: 5px
+					a
+						color: #2f2f2f
+					&:last-child
+						margin-bottom: 0
+
 /********** CONTENT END **********/
 
 /********** FOOTER START **********/

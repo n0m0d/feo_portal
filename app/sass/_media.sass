@@ -11,11 +11,12 @@
 		padding-left: 0
 		padding-right: 0
 
-	.section-1
-		.left-slider-col
-			padding-left: 0
-		.right-slider-col
-			padding-right: 0
+	.main-index
+		.section-1
+			.left-slider-col
+				padding-left: 0
+			.right-slider-col
+				padding-right: 0
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -39,6 +40,17 @@
 					span
 						font-size: 20px
 						line-height: 25px
+
+	.main-news
+		.section-1
+			.left-slider-col
+				.main-slider
+					.descr
+						h1
+							max-width: 450px
+						.time
+							.icon-clock
+								display: none
 
 @media only screen and (max-width : 1050px)
 	.main-header
@@ -157,12 +169,26 @@
 			&:last-child
 				margin-bottom: 0
 
+	.main-news
+		.section-1
+			.left-slider-col
+				.main-slider
+					.descr
+						.time
+							.icon-clock
+								display: inline-block
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 	/**/
 
+	h1
+		font-size: 24px
+		line-height: 29px
+
 	h2
 		font-size: 18px
+		line-height: 23px
 
 	.main-header
 		.main-wrap
@@ -210,27 +236,92 @@
 					.title
 						font-size: 16px
 						line-height: 21px
-
-	.section-1
-		.right-slider-col
-			margin-top: 0
-		.left-slider-col
-			.main-slider
-				.descr
-					padding-bottom: 10px
-					padding-top: 10px
-					h1
-						font-size: 18px
-						line-height: 23px
-						max-width: 300px
-					.time
-						line-height: 25px
+	.main-index, .main-news
+		.section-1
+			.right-slider-col
+				margin-top: 0
+			.left-slider-col
+				.main-slider
+					.descr
+						padding-bottom: 10px
+						padding-top: 10px
+						h1
+							font-size: 18px
+							line-height: 23px
+							max-width: 300px
+						.time
+							line-height: 25px
 
 	.section-2
 		.info-item-wrap
 			margin-bottom: 20px
 			&:last-child
 				margin-bottom: 0
+
+	.main-news
+		.section-1
+			.info-block-verticale
+				margin-bottom: 20px
+		.section-2 
+			.info-item-wrap
+				margin-top: 0
+
+	.main-news-page
+		.section-1
+			.news-today
+				padding: 10px
+			.post-wrap
+				padding: 10px
+			.comments-wrap
+				padding: 10px
+				.ava-wrap
+					width: 40px
+					height: 40px
+					img
+						width: 40px
+						height: 40px
+				.add-comment
+					.left-col
+						width: 20%
+					.right-col
+						width: 80%
+				.comments
+					.comment
+						.left-col
+							width: 20%
+						.right-col
+							width: 80%
+							.user-comment
+								.head
+									height: 17px
+									.name
+										font-size: 12px
+										line-height: 17px
+									.time
+										font-size: 12px
+										line-height: 17px
+								.content
+									p
+										font-size: 13px
+										line-height: 18px
+								.foot
+									height: 17px
+									.review
+										a
+											font-size: 12px
+											line-height: 17px
+									.likes
+										span
+											line-height: 17px
+										.icon-like
+											font-size: 17px
+										.text-like
+											font-size: 12px
+					.review
+						.left-col
+							width: 30%
+						.right-col
+							width: 70%
 
 	.main-footer
 		.main-wrap
