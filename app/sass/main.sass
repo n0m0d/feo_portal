@@ -19,6 +19,32 @@
 	color: #666
 	opacity: 1
 
+.main-ads-page
+	.title-block
+		::-webkit-input-placeholder
+			color: $accent
+			opacity: 1
+			font-size: 14px
+			line-height: 19px
+
+		*:-moz-placeholder
+			color: $accent
+			opacity: 1
+			font-size: 14px
+			line-height: 19px
+
+		*::-moz-placeholder
+			color: $accent
+			opacity: 1
+			font-size: 14px
+			line-height: 19px
+
+		*:-ms-input-placeholder
+			color: $accent
+			opacity: 1
+			font-size: 14px
+			line-height: 19px
+
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: #666
@@ -54,6 +80,29 @@ h3
 	line-height: 21px
 	color: #2f2f2f
 	margin: 0
+
+.button-wrap
+	margin-bottom: 20px
+	.button
+		background-color: $red
+		text-decoration: none
+		display: block
+		border-radius: 3em
+		text-align: center
+		transition: all .5s ease
+		span
+			color: #fff
+			line-height: 50px
+			font-size: 20px
+			display: inline-block
+			vertical-align: middle
+		.icon-pencil
+			margin-right: 10px
+		.button-text
+			font-size: 16px
+			font-family: "Roboto-Bold", sans-serif
+		&:hover
+			background-color: #ed635a
 
 .header-scroll
 	position: fixed
@@ -477,6 +526,136 @@ h3
 		a
 			display: inline-block
 
+/********** ADS BLOCK horizontale **********/
+.ads-block-horizontale
+	font-size: 0
+	margin-top: 20px
+	.ads-item-wrap
+		background-color: #FFF
+		//margin-bottom: 20px
+		.img-wrap
+			display: inline-block
+			width: 100%
+			overflow: hidden
+			img
+				width: 240px
+				height: 180px
+		.content
+			font-size: 14px
+			padding: 20px 0 20px 0
+			.item-title
+				display: inline-block
+				vertical-align: middle
+				a
+					font-size: 16px
+					color: #2e2e2e
+					line-height: 21px
+			.item-select
+				display: inline-block
+				vertical-align: middle
+				float: right
+				margin-right: 20px
+				i
+					display: none
+					cursor: pointer
+					color: $accent
+				.active
+					display: inline-block
+			.item-content
+				font-size: 0
+				border-right: 1px solid #e3e3e3
+				//max-width: 245px
+				.price
+					font-size: 16px
+					line-height: 21px
+					display: inline-block
+					color: $red
+					font-family: "Roboto-Bold", sans-serif
+					vertical-align: middle
+					margin-right: 5px
+				.user-name
+					display: inline-block
+					font-size: 0
+					vertical-align: middle
+					span
+						color: $accent
+						font-size: 12px
+						line-height: 21px
+						display: inline-block
+						vertical-align: middle
+				.ads-content-text
+					display: block
+					color: #afafaf
+					font-size: 14px
+					line-height: 19px
+					margin: 8px 0
+					max-height: 57px
+					overflow: hidden
+			.item-content-right
+				display: inline-block
+				font-size: 12px
+				line-height: 17px
+				margin-top: 15px
+				.get-vip
+					color: #ffa200
+					display: block
+				.report
+					color: #828282
+					display: block
+				.cat-name
+					color: #828282
+					display: block
+			.item-foot
+				font-size: 0
+				//margin-top: 5px
+				.location
+					display: inline-block
+					font-size: 0
+					vertical-align: middle
+					span
+						color: $accent
+						font-size: 17px
+						line-height: 21px
+						display: inline-block
+						vertical-align: middle
+					.icon-location-pin
+						margin-right: 5px
+					.text-location
+						font-size: 12px
+				.time
+					font-size: 0
+					display: inline-block
+					font-size: 0
+					vertical-align: middle
+					margin-right: 5px
+					span
+						color: #afafaf
+						font-size: 17px
+						line-height: 21px
+						display: inline-block
+						vertical-align: middle
+					.icon-clock
+						margin-right: 5px
+					.text-clock
+						font-size: 12px
+				.ads-item-up
+					display: inline-block
+					font-size: 0
+					vertical-align: middle
+					float: right
+					margin-right: 20px
+					i, a
+						color: $accent
+						font-size: 17px
+						line-height: 21px
+						display: inline-block
+						vertical-align: middle
+					.fa-long-arrow-up
+						margin-right: 5px
+						color: $red
+					.text-location
+						font-size: 12px
+
 /********** INFO BLOCK horizontale **********/
 .info-block-horizontale
 	font-size: 0
@@ -639,6 +818,40 @@ h3
 		float: right
 		margin-top: 2px
 		margin-right: 10px
+	.sort
+		font-family: "Roboto-Bold", sans-serif
+		font-size: 14px
+		line-height: 19px
+		display: inline-block
+		vertical-align: middle
+		color: #2f2f2f
+		margin-right: 20px
+	.date-wrap
+		display: inline-block
+		margin-right: 20px
+		.datepicker
+			font-size: 14px
+			line-height: 19px
+			color: $accent
+			display: inline-block
+			vertical-align: middle
+			max-width: 40px
+			border: none
+			cursor: pointer
+		.icon-arrow-down
+			font-size: 10px
+			line-height: 19px
+			display: inline-block
+			vertical-align: middle
+			color: $red
+	.price-ui-slider
+		max-width: 250px
+		margin: 0
+	.price-text
+		color: #7e7e7e
+		font-size: 14px
+		line-height: 19px
+		font-family: "Roboto-Bold", sans-serif
 
 /********** BLUE BOX **********/
 .blue-box
@@ -652,6 +865,75 @@ h3
 			padding: 0 20px
 	.blue-content
 		padding: 20px
+
+/********** YELLOW BOX **********/
+.yellow-box
+	background-color: #FFF
+	border: 2px solid #ffa200
+	margin-bottom: 20px
+	.yellow-title
+		background-color: #ffa200
+		text-align: center
+		h2
+			color: #fff
+			line-height: 45px
+			padding: 0 20px
+			font-size: 16px
+	.yellow-content
+		padding: 20px
+		.item
+			margin-bottom: 20px
+			padding-bottom: 20px
+			border-bottom: 1px solid #f2f2f2
+			.item-content
+				a
+					font-size: 16px
+					color: #2e2e2e
+					line-height: 21px
+					margin: 10px 5px 5px 5px
+			.item-foot
+				font-size: 0
+				margin-left: 5px
+				margin-right: 5px
+				.price
+					font-size: 16px
+					line-height: 21px
+					display: inline-block
+					color: $red
+					font-family: "Roboto-Bold", sans-serif
+					vertical-align: middle
+					margin-right: 5px
+				.location
+					display: inline-block
+					font-size: 0
+					vertical-align: middle
+					span
+						color: $accent
+						font-size: 17px
+						line-height: 21px
+						display: inline-block
+						vertical-align: middle
+					.icon-location-pin
+						margin-right: 5px
+					.text-location
+						font-size: 12px
+				.time
+					font-size: 0
+					margin-top: 5px
+					span
+						color: #afafaf
+						font-size: 17px
+						line-height: 17px
+						display: inline-block
+						vertical-align: middle
+					.icon-clock
+						margin-right: 5px
+					.text-clock
+						font-size: 12px
+			&:last-child
+				margin-bottom: 0
+				padding-bottom: 0
+				border: none
 
 /********** USER SURVEY **********/
 .user-survey-wrap
@@ -906,6 +1188,52 @@ h3
 			color: #fff
 			line-height: 21px
 
+/********** LAST COMMENTS **********/
+.blue-box
+			margin-top: 0
+			margin-bottom: 20px
+			.blue-title
+				h2
+					font-size: 16px
+					text-align: center
+			.blue-content
+				.item
+					margin-bottom: 20px
+					padding-bottom: 20px
+					border-bottom: 1px solid #f2f2f2
+					.item-title
+						h3
+							font-size: 18px
+							line-height: 23px
+							font-family: "Minion-Regular"
+							max-height: 46px
+							overflow: hidden
+					.item-content
+						p
+							margin: 20px 0
+							font-size: 14px
+							color: #afafaf
+							line-height: 19px
+							max-height: 76px
+							overflow: hidden
+					.item-foot
+						.time
+							font-size: 0
+							span
+								color: #afafaf
+								vertical-align: middle
+							.icon-clock
+								font-size: 16px
+								line-height: 17px
+								margin-right: 5px
+							.text-clock
+								font-size: 12px
+								line-height: 17px
+					&:last-child
+						margin-bottom: 0
+						border-bottom: none
+						padding-bottom: 0
+
 /********** CONTENT START **********/
 .main-index
 	.section-1
@@ -953,50 +1281,6 @@ h3
 			margin-top: 20px
 		.info-item-wrap
 			margin-top: 20px
-		.blue-box
-			margin-top: 0
-			margin-bottom: 20px
-			.blue-title
-				h2
-					font-size: 16px
-					text-align: center
-			.blue-content
-				.item
-					margin-bottom: 20px
-					padding-bottom: 20px
-					border-bottom: 1px solid #f2f2f2
-					.item-title
-						h3
-							font-size: 18px
-							line-height: 23px
-							font-family: "Minion-Regular"
-							max-height: 46px
-							overflow: hidden
-					.item-content
-						p
-							margin: 20px 0
-							font-size: 14px
-							color: #afafaf
-							line-height: 19px
-							max-height: 76px
-							overflow: hidden
-					.item-foot
-						.time
-							font-size: 0
-							span
-								color: #afafaf
-								vertical-align: middle
-							.icon-clock
-								font-size: 16px
-								line-height: 17px
-								margin-right: 5px
-							.text-clock
-								font-size: 12px
-								line-height: 17px
-					&:last-child
-						margin-bottom: 0
-						border-bottom: none
-						padding-bottom: 0
 
 .main-news-page
 	.section-1
@@ -1216,6 +1500,364 @@ h3
 					&:last-child
 						margin-bottom: 0
 
+.price-ui-slider
+			margin-top: 50px
+			margin-bottom: 20px
+			height: 3px
+			border: none
+			box-shadow: none
+			.noUi-base
+				background-color: #e3e3e3
+				.noUi-connect
+					background-color: $accent
+				.noUi-origin
+					.noUi-handle
+						width: 15px
+						height: 15px
+						border-radius: 100%
+						background-color: $accent
+						border: none
+						box-shadow: none
+						left: -5px
+						top: -5px
+						&::before, &::after
+							display: none
+						.noUi-tooltip
+							background-color: #e3e3e3
+							border: none
+							//border-radius: 0
+							font-size: 14px
+							line-height: 19px
+							color: #2f2f2f
+
+.ads-cat-block
+		padding: 20px
+		background-color: #FFF
+		margin-top: 20px
+		h2
+			font-size: 16px
+			line-height: 21px
+			margin-bottom: 20px
+			text-align: left
+		.ads-ul-block
+			padding: 0
+			margin: 0
+			list-style-type: none
+			line-height: 19px
+			.ads-li
+				a
+					font-size: 14px
+					line-height: 19px
+					color: $accent
+				.ads-ul-block-inner
+					list-style-type: none
+					margin: 10px 0
+					padding: 0 0 0 20px
+					display: none
+			.active
+				a
+					color: $red
+				.ads-ul-block-inner
+					li
+						a
+							color: $accent
+
+.main-ads-page
+	.price-ui-wrap
+		padding: 20px
+		background-color: #FFF
+		text-align: center
+		h2
+			font-size: 16px
+			line-height: 21px
+			margin-bottom: 20px
+			text-align: left
+		.price-accept
+			font-size: 14px
+			line-height: 19px
+			color: $accent
+			margin: 20px 0
+
+	.title-block
+		margin-bottom: 0
+	.ads-cat
+		background-color: #FFF
+		text-align: left
+		padding: 45px 45px 25px 45px
+		margin-top: 20px
+		.col-block-1, .col-block-2, .col-block-3
+			.item-wrap
+				margin-bottom: 20px
+				margin-left: 50px
+				a
+					color: #2f2f2f
+					display: inline-block
+					font-size: 16px
+					line-height: 21px
+					font-family: "Roboto-Bold", sans-serif
+					vertical-align: middle
+					&::before
+						content: ''
+						display: inline-block
+						background-image: url("/img/ads-icons/1.png")
+						background-repeat: no-repeat
+						background-position: center center
+						width: 40px
+						height: 36px
+						vertical-align: middle
+						margin-right: 25px
+				&:nth-child(2)
+					a
+						&::before
+							width: 44px
+							height: 32px
+							background-image: url("/img/ads-icons/2.png")
+							margin-right: 22px
+				&:nth-child(3)
+					a
+						&::before
+							margin-right: 22px
+							width: 44px
+							height: 30px
+							background-image: url("/img/ads-icons/3.png")
+				&:nth-child(4)
+					a
+						&::before
+							margin-right: 30px
+							width: 36px
+							height: 40px
+							background-image: url("/img/ads-icons/4.png")
+				&:last-child
+					//margin-bottom: 0
+		.col-block-2
+			.item-wrap
+				a
+					&::before
+						background-image: url("/img/ads-icons/5.png")
+						width: 42px
+						height: 32px
+				&:nth-child(2)
+					a
+						&::before
+							width: 42px
+							height: 36px
+							background-image: url("/img/ads-icons/6.png")
+							margin-right: 26px
+				&:nth-child(3)
+					a
+						&::before
+							margin-right: 26px
+							width: 42px
+							height: 42px
+							background-image: url("/img/ads-icons/7.png")
+				&:nth-child(4)
+					a
+						&::before
+							margin-right: 18px
+							width: 50px
+							height: 34px
+							background-image: url("/img/ads-icons/8.png")
+		.col-block-3
+			.item-wrap
+				a
+					&::before
+						background-image: url("/img/ads-icons/9.png")
+						width: 36px
+						height: 40px
+				&:nth-child(2)
+					a
+						&::before
+							width: 40px
+							height: 38px
+							background-image: url("/img/ads-icons/10.png")
+							margin-right: 22px
+				&:nth-child(3)
+					a
+						&::before
+							margin-right: 22px
+							width: 40px
+							height: 34px
+							background-image: url("/img/ads-icons/11.png")
+				&:nth-child(4)
+					a
+						&::before
+							margin-right: 26px
+							width: 36px
+							height: 40px
+							background-image: url("/img/ads-icons/12.png")
+	.ads-cat-slider
+		margin-right: -15px
+		margin-left: -15px
+		margin-top: 20px
+		.item-wrap
+			background-color: #FFF
+			text-align: center
+			border-bottom: 2px solid transparent
+			a
+				color: #959595
+				font-size: 14px
+				line-height: 45px
+				font-family: "Roboto-Bold", sans-serif
+				//display: block
+				text-decoration: none
+			&:focus
+				border-color: $red
+				a
+					color: #2f2f2f
+	.section-1
+		.vertical-banners
+			margin-top: 20px
+		.ads-content-center-box
+			margin-bottom: 20px
+
+.main-ads-single-page
+	.ads-content-center-box
+		margin-bottom: 20px
+	.block-sticker-wrap
+		margin-top: 0
+	.vertical-banners
+		margin-top: 20px
+	.ads-page-wrap
+		background-color: #FFF
+		padding: 20px
+		.top-sect
+			margin-bottom: 10px
+			h1
+				color: #171717
+				font-size: 24px
+				line-height: 29px
+				margin: 0
+				display: inline-block
+				vertical-align: middle
+			.price
+				font-size: 24px
+				line-height: 29px
+				color: $red
+				display: inline-block
+				vertical-align: middle
+				font-family: "Roboto-Bold", sans-serif
+				float: right
+		.middle-sect
+			margin-bottom: 10px
+			.blue-button-wrap
+				background-color: $accent
+				text-align: center
+				display: inline-block
+				vertical-align: middle
+				border-radius: 2em
+				transition: all .5s ease
+				margin-right: 15px
+				.blue-button
+					font-size: 14px
+					line-height: 30px
+					color: #fff
+					font-family: "Roboto-Bold", sans-serif
+					display: block
+					text-decoration: none
+					padding: 0 20px
+				&:hover
+					background-color: #6281d1
+			.user-name
+				display: inline-block
+				vertical-align: middle
+				line-height: 30px
+				margin-right: 15px
+				font-size: 0
+				span
+					color: #afafaf
+					display: inline-block
+					vertical-align: middle
+					font-size: 14px
+					line-height: 19px
+				.icon-user
+					font-size: 16px
+					margin-right: 5px
+			.location
+				display: inline-block
+				vertical-align: middle
+				line-height: 30px
+				font-size: 0
+				span
+					color: $red
+					display: inline-block
+					vertical-align: middle
+					font-size: 14px
+					line-height: 19px
+				.icon-location-pin
+					font-size: 16px
+					margin-right: 5px
+					color: #afafaf
+		.bottom-sect
+			font-size: 0
+			.time
+				font-size: 0
+				display: inline-block
+				vertical-align: middle
+				margin-right: 19px
+				span
+					color: #afafaf
+					font-size: 14px
+					line-height: 19px
+					display: inline-block
+					vertical-align: middle
+				.icon-clock
+					margin-right: 5px
+					font-size: 16px
+			.get-vip
+				font-size: 0
+				display: inline-block
+				vertical-align: middle
+				margin-right: 19px
+				span,a
+					color: #ffa200
+					font-size: 14px
+					line-height: 19px
+					display: inline-block
+					vertical-align: middle
+				.icon-diamond
+					margin-right: 5px
+					font-size: 16px
+			.ads-item-up
+				display: inline-block
+				font-size: 0
+				vertical-align: middle
+				i, a
+					color: $accent
+					font-size: 14px
+					line-height: 19px
+					display: inline-block
+					vertical-align: middle
+				.fa-long-arrow-up
+					margin-right: 5px
+					color: $red
+					font-size: 16px
+		.fotorama
+			margin-top: 20px
+			margin-left: -20px
+			margin-right: -20px
+		.info-content-block
+			font-size: 0
+			margin: 20px 0
+			span
+				font-size: 13px
+				line-height: 18px
+				color: #afafaf
+				display: inline-block
+				vertical-align: middle
+				margin-right: 19px
+		.content-wrap
+			.ads-info-head
+				margin-bottom: 20px
+				span
+					display: block
+					font-size: 16px
+					line-height: 21px
+					color: #171717
+			p
+				margin: 0
+				color: #171717
+				font-size: 16px
+				line-height: 21px
 /********** CONTENT END **********/
 
 /********** FOOTER START **********/

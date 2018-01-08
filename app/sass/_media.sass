@@ -52,6 +52,17 @@
 							.icon-clock
 								display: none
 
+	.ads-block-horizontale
+		.ads-item-wrap
+			.content
+				.item-foot
+					.location
+						.icon-location-pin
+							display: none
+					.time
+						.icon-clock
+							display: none
+
 @media only screen and (max-width : 1050px)
 	.main-header
 		.main-wrap
@@ -178,6 +189,28 @@
 							.icon-clock
 								display: inline-block
 
+	.ads-block-horizontale
+		.ads-item-wrap
+			.content
+				.item-foot
+					.location
+						.icon-location-pin
+							display: inline-block
+					.time
+						.icon-clock
+							display: inline-block
+
+	.block-sticker-wrap
+		.yellow-box
+			margin-bottom: 0
+
+	.yellow-box
+		.yellow-content
+			.item
+				margin-bottom: 0
+				padding-bottom: 0
+				border-bottom: 0
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
 	/**/
@@ -266,6 +299,23 @@
 			.info-item-wrap
 				margin-top: 0
 
+	.ads-block-horizontale
+		.ads-item-wrap
+			.img-wrap
+				img
+					width: 100%
+					height: auto
+			.content
+				padding: 10px
+				.item-title
+					a
+						font-size: 14px
+						line-height: 19px
+				.item-content
+					border: 0
+					.price
+						font-size: 14px
+						line-height: 19px
 	.main-news-page
 		.section-1
 			.news-today
@@ -335,10 +385,35 @@
 				.bot-social
 					padding: 30px 0
 
+@media only screen and (max-width : 550px)
+	.main-ads-single-page
+		.ads-page-wrap
+			padding: 10px
+			.top-sect
+				h1
+					margin-bottom: 10px
+				.price
+					float: none
+					display: block
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
 	/**/
+	.main-ads-page
+		.ads-cat
+			.col-block-1, .col-block-2, .col-block-3
+				.item-wrap
+					margin-left: 0
 
+	.main-ads-single-page
+		.ads-page-wrap
+			.top-sect
+				.price
+					float: none
+					display: block
+			.bottom-sect
+				.time
+					display: block
+					margin-bottom: 10px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 319px)
