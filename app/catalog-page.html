@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Новости - страница</title>
+	<title>Каталог - раздел</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,7 +44,7 @@
 	<script src="libs/jquery-ui/js/jquery-ui.min.js"></script>
 	<script src="libs/noui-slider/js/nouislider.min.js"></script>
 	<script src="libs/wNumb/wNumb.js"></script>
-	<script src="js/common-news.js"></script>
+	<script src="js/common-ads-page.js"></script>
 
 </head>
 
@@ -133,7 +133,7 @@
 				<div class="container nps">
 					<ul class="menu hidden-xs">
 						<li><a href="/"><span class="icon-home"></span></a></li>
-						<li class="active">
+						<li>
 							<a href="news.html">Новости</a>
 							<ul>
 								<li><a href="news-page.html">Страница новости</a></li>
@@ -147,7 +147,7 @@
 						</li>
 						<li><a href="#">Вопросы</a></li>
 						<li><a href="#">Работа</a></li>
-						<li>
+						<li class="active">
 							<a href="catalog.html">Бизнес каталог</a>
 							<ul>
 								<li><a href="catalog-page.html">Страница каталога</a></li>
@@ -264,7 +264,7 @@
 		</div>
 	</header>
 
-	<main class="main-news-page">
+	<main class="main-catalog-page">
 		<div class="container">
 			<div class="main-banners">
 				<div class="row">
@@ -284,44 +284,63 @@
 					</div>
 				</div>
 			</div>
+			<div class="title-block">
+				<div class="row">
+					<div class="col-md-12 col-sm-8">
+						<h2>Автомагазины, запчасти, аксессуары</h2>
+					</div>
+				</div>
+			</div>
 			<section class="section-1">
 				<div class="row">
 					<div class="col-md-3 hidden-sm hidden-xs block-sticker-wrap">
 						<aside>
-							<div class="read-more">
-								<h2>Читать так-же</h2>
-								<div class="item-wrap">
-									<a href="#" class="item">
-										Мать увидела фото похищенной дочери на сайте проституток и вызвала её как клиент
-									</a>
-								</div>
-								<div class="item-wrap">
-									<a href="#" class="item">
-										Мать увидела фото похищенной дочери на сайте проституток и вызвала её как клиент
-									</a>
-								</div>
-								<div class="item-wrap">
-									<a href="#" class="item">
-										Мать увидела фото похищенной дочери на сайте проституток и вызвала её как клиент
-									</a>
-								</div>
-								<div class="item-wrap">
-									<a href="#" class="item">
-										Мать увидела фото похищенной дочери на сайте проституток и вызвала её как клиент
-									</a>
-								</div>
-								<div class="item-wrap">
-									<a href="#" class="item">
-										Мать увидела фото похищенной дочери на сайте проституток и вызвала её как клиент
-									</a>
-								</div>
+							<div class="button-wrap">
+								<a href="#" class="button">
+									<span class="icon-pencil"></span>
+									<span class="button-text">Добавить объявление</span>
+								</a>
 							</div>
-							<div class="vertical-banners">
-								<div class="banner-wrap">
-									<a href="#">
-										<img class="img-responsive" src="img/banners/banner-6.jpg" alt="alt">
-									</a>
-								</div>
+							<div class="ads-cat-block">
+								<h2>Рубрики объявлений</h2>
+								<ul class="ads-ul-block">
+									<li class="ads-li">
+										<a href="#">Бытовая техника (150)</a>
+										<ul class="ads-ul-block-inner">
+											<li class="ads-li-inner"><a href="#">Легковые (48)</a></li>
+											<li class="ads-li-inner"><a href="#">Мото-техника (5)</a></li>
+											<li class="ads-li-inner"><a href="#">Водный транспорт (2)</a></li>
+											<li class="ads-li-inner"><a href="#">Спецтехника (5)</a></li>
+										</ul>
+									</li>
+									<li class="ads-li">
+										<a href="#">Все для дома и сада (425)</a>
+										<ul class="ads-ul-block-inner">
+											<li class="ads-li-inner"><a href="#">Легковые (48)</a></li>
+											<li class="ads-li-inner"><a href="#">Мото-техника (5)</a></li>
+											<li class="ads-li-inner"><a href="#">Водный транспорт (2)</a></li>
+											<li class="ads-li-inner"><a href="#">Спецтехника (5)</a></li>
+										</ul>
+									</li>
+									<li class="ads-li">
+										<a href="#">Транспорт (200)</a>
+										<ul class="ads-ul-block-inner">
+											<li class="ads-li-inner"><a href="#">Легковые (48)</a></li>
+											<li class="ads-li-inner"><a href="#">Мото-техника (5)</a></li>
+											<li class="ads-li-inner"><a href="#">Водный транспорт (2)</a></li>
+											<li class="ads-li-inner"><a href="#">Спецтехника (5)</a></li>
+										</ul>
+									</li>
+									<li class="ads-li">
+										<a href="#">Компьютеры и телефоны (80)</a>
+										<ul class="ads-ul-block-inner">
+											<li class="ads-li-inner"><a href="#">Легковые (48)</a></li>
+											<li class="ads-li-inner"><a href="#">Мото-техника (5)</a></li>
+											<li class="ads-li-inner"><a href="#">Водный транспорт (2)</a></li>
+											<li class="ads-li-inner"><a href="#">Спецтехника (5)</a></li>
+										</ul>
+									</li>
+								</ul>
 							</div>
 							<div class="vertical-banners">
 								<div class="banner-wrap">
@@ -332,225 +351,182 @@
 							</div>
 						</aside>
 					</div>
-					<div class="col-md-6">
-						<div class="post-wrap">
-							<div class="tags">
-								<a href="#">#Новости</a>
-								<a href="#">#Фильмы</a>
-								<a href="#">#Премьеры</a>
-							</div>
-							<h1>
-								В Феодосии неизвестный сбил пожилого пешехода и скрылся с места
-							</h1>
-							<div class="time">
-								<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-							</div>
-							<div class="views">
-								<span class="icon-eye"></span><span class="text-views">505</span>
-							</div>
-							<div class="fotorama" data-allowfullscreen="true" data-click="false" data-nav="thumbs" data-loop="true" data-width="100%" data-fit="cover">
-								<img src="img/fotorama/item-1.jpg" alt="alt">
-								<img src="img/fotorama/item-2.jpg" alt="alt">
-								<img src="img/fotorama/item-3.jpg" alt="alt">
-								<img src="img/fotorama/item-4.jpg" alt="alt">
-								<img src="img/fotorama/item-5.jpg" alt="alt">
-								<img src="img/fotorama/item-6.jpg" alt="alt">
-								<img src="img/fotorama/item-7.jpg" alt="alt">
-								<img src="img/fotorama/item-8.jpg" alt="alt">
-							</div>
-							<div class="content-wrap">
-								<p>В ходе экспериментов над лабораторными мышами, учёные выяснили, что особи, которым "встроили" человеческие варианты гена, значительно быстрее набирают лишний вес. Оказалось, что анкирин-В регулирует работу белка Glut4, который отвечает за скорость попадания глюкозы в жировые клетки.</p>
-								<span class="quote-text">
-									Мы считаем, что этот ген помогал нашим предкам сохранять энергию в голодные времена. Но теперь, когда мы не испытываем недостатка в пище, эта мутация анкирина может превратить ожирение в эпидемию, — прокомментировал
-								</span>
-								<p><b>В ходе экспериментов над лабораторными мышами, учёные выяснили, что особи, которым "встроили" человеческие варианты гена, значительно быстрее набирают лишний вес. Оказалось, что анкирин-В регулирует работу белка Glut4, который отвечает за скорость попадания глюкозы в жировые клетки.</b></p>
-							</div>
-						</div>
-						<div class="banner-wrap">
-							<a href="#">
-								<img class="img-responsive" src="img/banners/banner-2.jpg" alt="alt">
-							</a>
-						</div>
-						<div class="comments-wrap">
-							<h2>Комментарии</h2>
-							<div class="add-comment">
-								<div class="left-col">
-									<div class="ava-wrap">
-										<img src="img/avatars/item-1.jpg" alt="alt">
-									</div>
-								</div>
-								<div class="right-col">
-									<div class="button">
-										<a href="#">Оставить комметарий</a>
-									</div>
-								</div>
-								<div class="comments">
-									<div class="comment">
-										<div class="left-col">
-											<div class="ava-wrap">
-												<img src="img/avatars/item-1.jpg" alt="alt">
-											</div>
-										</div>
-										<div class="right-col">
-											<div class="user-comment">
-												<div class="head">
-													<div class="name">Aruba Miro</div>
-													<div class="time">18 часов назад</div>
+					<div class="col-md-6 col-sm-12 catalog-page-content-center-box">
+						<div class="catalog-page-wrap">
+							<div class="row">
+								<div class="ads-block-horizontale col-sm-12 col-xs-6">
+									<div class="ads-item-wrap">
+										<div class="row">
+											<div class="col-sm-4">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
 												</div>
+											</div>
+											<div class="col-sm-8">
 												<div class="content">
-													<p>бедные американцы в большинстве своем явились носителями плохого гена, а жрут не в себя просто так, ведь не от этого толстеют бедны</p>
-												</div>
-												<div class="foot">
-													<div class="review">
-														<a href="#">Ответить</a>
-													</div>
-													<div class="likes">
-														<a href="#"><span class="icon-like"></span></a><span class="text-like">505</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="comment review">
-										<div class="left-col">
-											<div class="ava-wrap">
-												<img src="img/avatars/item-1.jpg" alt="alt">
-											</div>
-										</div>
-										<div class="right-col">
-											<div class="user-comment">
-												<div class="head">
-													<div class="name">Aruba Miro</div>
-													<div class="time">18 часов назад</div>
-												</div>
-												<div class="content">
-													<p>бедные американцы в большинстве своем явились носителями плохого гена, а жрут не в себя просто так, ведь не от этого толстеют бедны</p>
-												</div>
-												<div class="foot">
-													<div class="review">
-														<a href="#">Ответить</a>
-													</div>
-													<div class="likes">
-														<a href="#"><span class="icon-like"></span></a><span class="text-like">505</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="comment">
-										<div class="left-col">
-											<div class="ava-wrap">
-												<img src="img/avatars/item-1.jpg" alt="alt">
-											</div>
-										</div>
-										<div class="right-col">
-											<div class="user-comment">
-												<div class="head">
-													<div class="name">Aruba Miro</div>
-													<div class="time">18 часов назад</div>
-												</div>
-												<div class="content">
-													<p>бедные американцы в большинстве своем явились носителями плохого гена, а жрут не в себя просто так, ведь не от этого толстеют бедны</p>
-												</div>
-												<div class="foot">
-													<div class="review">
-														<a href="#">Ответить</a>
-													</div>
-													<div class="likes">
-														<a href="#"><span class="icon-like"></span></a><span class="text-like">505</span>
+													<div class="row">
+														<div class="col-sm-12">
+															<div class="item-title">
+																<a href="#">
+																	Автомойка
+																</a>
+															</div>
+														</div>
+														<div class="col-sm-8">
+															<div class="item-content">
+																<p class="ads-content-text">
+																	Автомойка круглосуточно, действует дисконтная карта (10-я мойка бесплатно)
+																</p>
+															</div>
+														</div>
+														<div class="col-sm-4 hidden-xs">
+															<div class="item-content-right">
+																<span class="cat-name">Рейтинг</span>
+																<span class="cat-name">интернет - 43979</span>
+																<span class="cat-name">телефон - 5128</span>
+																<span class="cat-name">общий - 49107</span>
+															</div>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+								<div class="ads-block-horizontale col-sm-12 col-xs-6">
+									<div class="ads-item-wrap">
+										<div class="row">
+											<div class="col-sm-4">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+											</div>
+											<div class="col-sm-8">
+												<div class="content">
+													<div class="row">
+														<div class="col-sm-12">
+															<div class="item-title">
+																<a href="#">
+																	Автомойка
+																</a>
+															</div>
+														</div>
+														<div class="col-sm-8">
+															<div class="item-content">
+																<p class="ads-content-text">
+																	Автомойка круглосуточно, действует дисконтная карта (10-я мойка бесплатно)
+																</p>
+															</div>
+														</div>
+														<div class="col-sm-4 hidden-xs">
+															<div class="item-content-right">
+																<span class="cat-name">Рейтинг</span>
+																<span class="cat-name">интернет - 43979</span>
+																<span class="cat-name">телефон - 5128</span>
+																<span class="cat-name">общий - 49107</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ads-block-horizontale col-sm-12 col-xs-6">
+									<div class="ads-item-wrap">
+										<div class="row">
+											<div class="col-sm-4">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+											</div>
+											<div class="col-sm-8">
+												<div class="content">
+													<div class="row">
+														<div class="col-sm-12">
+															<div class="item-title">
+																<a href="#">
+																	Автомойка
+																</a>
+															</div>
+														</div>
+														<div class="col-sm-8">
+															<div class="item-content">
+																<p class="ads-content-text">
+																	Автомойка круглосуточно, действует дисконтная карта (10-я мойка бесплатно)
+																</p>
+															</div>
+														</div>
+														<div class="col-sm-4 hidden-xs">
+															<div class="item-content-right">
+																<span class="cat-name">Рейтинг</span>
+																<span class="cat-name">интернет - 43979</span>
+																<span class="cat-name">телефон - 5128</span>
+																<span class="cat-name">общий - 49107</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="ads-block-horizontale col-sm-12 col-xs-6">
+									<div class="ads-item-wrap">
+										<div class="row">
+											<div class="col-sm-4">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+											</div>
+											<div class="col-sm-8">
+												<div class="content">
+													<div class="row">
+														<div class="col-sm-12">
+															<div class="item-title">
+																<a href="#">
+																	Автомойка
+																</a>
+															</div>
+														</div>
+														<div class="col-sm-8">
+															<div class="item-content">
+																<p class="ads-content-text">
+																	Автомойка круглосуточно, действует дисконтная карта (10-я мойка бесплатно)
+																</p>
+															</div>
+														</div>
+														<div class="col-sm-4 hidden-xs">
+															<div class="item-content-right">
+																<span class="cat-name">Рейтинг</span>
+																<span class="cat-name">интернет - 43979</span>
+																<span class="cat-name">телефон - 5128</span>
+																<span class="cat-name">общий - 49107</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="news-today">
-							<h2>Новости за сегодня:</h2>
-							<ul>
-								<li><span>15:09</span><a href="#">Феодосийцам покажут захватывающее шоу</a></li>
-								<li><span>15:09</span><a href="#">Феодосийцам покажут захватывающее шоу</a></li>
-								<li><span>15:09</span><a href="#">Феодосийцам покажут захватывающее шоу</a></li>
-								<li><span>15:09</span><a href="#">Феодосийцам покажут захватывающее шоу</a></li>
-								<li><span>15:09</span><a href="#">Феодосийцам покажут захватывающее шоу</a></li>
-								<li><span>15:09</span><a href="#">Феодосийцам покажут захватывающее шоу</a></li>
-								<li><span>15:09</span><a href="#">Феодосийцам покажут захватывающее шоу</a></li>
-							</ul>
+							<div class="cat-item-link">
+								<a href="#">Автопрокат, Аквапринт, Автомойка, Авто</a>
+							</div>
+							<div class="cat-item-link">
+								<a href="#">Автопрокат, Аквапринт, Автомойка, Авто</a>
+							</div>
+							<div class="cat-item-link">
+								<a href="#">Автопрокат, Аквапринт, Автомойка, Авто</a>
+							</div>
+							<div class="cat-item-link">
+								<a href="#">Автопрокат, Аквапринт, Автомойка, Авто</a>
+							</div>
 						</div>
 					</div>
-					<div class="col-md-3 hidden-sm hidden-xs block-sticker-wrap">
+					<div class="col-md-3 col-sm-12 ads-aside-right-box block-sticker-wrap">
 						<aside>
-							<div class="block-sticker">
-								<h3>Мебельная фабрика Дюарт</h3>
-								<p>Мебель по любым вашим размерам Подробности на сайте</p>
-								<div class="phone">
-									<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-								</div>
-							</div>
-							<div class="block-sticker">
-								<h3>Мебельная фабрика Дюарт</h3>
-								<p>Мебель по любым вашим размерам Подробности на сайте</p>
-								<div class="phone">
-									<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-								</div>
-							</div>
-							<div class="block-sticker">
-								<h3>Мебельная фабрика Дюарт</h3>
-								<p>Мебель по любым вашим размерам Подробности на сайте</p>
-								<div class="phone">
-									<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-								</div>
-							</div>
-							<div class="block-sticker">
-								<h3>Мебельная фабрика Дюарт</h3>
-								<p>Мебель по любым вашим размерам Подробности на сайте</p>
-								<div class="phone">
-									<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-								</div>
-							</div>
-							<div class="block-sticker">
-								<h3>Мебельная фабрика Дюарт</h3>
-								<p>Мебель по любым вашим размерам Подробности на сайте</p>
-								<div class="phone">
-									<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-								</div>
-							</div>
-							<div class="block-sticker">
-								<h3>Мебельная фабрика Дюарт</h3>
-								<p>Мебель по любым вашим размерам Подробности на сайте</p>
-								<div class="phone">
-									<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-								</div>
-							</div>
-							<div class="block-sticker">
-								<h3>Мебельная фабрика Дюарт</h3>
-								<p>Мебель по любым вашим размерам Подробности на сайте</p>
-								<div class="phone">
-									<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-								</div>
-							</div>
-							<div class="block-sticker">
-								<h3>Мебельная фабрика Дюарт</h3>
-								<p>Мебель по любым вашим размерам Подробности на сайте</p>
-								<div class="phone">
-									<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-								</div>
-							</div>
-							<div class="block-sticker">
-								<h3>Мебельная фабрика Дюарт</h3>
-								<p>Мебель по любым вашим размерам Подробности на сайте</p>
-								<div class="phone">
-									<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-								</div>
-							</div>
-							<div class="block-sticker">
-								<h3>Мебельная фабрика Дюарт</h3>
-								<p>Мебель по любым вашим размерам Подробности на сайте</p>
-								<div class="phone">
-									<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-								</div>
-							</div>
 							<div class="block-sticker">
 								<h3>Мебельная фабрика Дюарт</h3>
 								<p>Мебель по любым вашим размерам Подробности на сайте</p>

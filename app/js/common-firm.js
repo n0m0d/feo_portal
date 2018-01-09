@@ -1,10 +1,5 @@
 $(function() {
 
-	$(".fotorama__stage__shaft").on("click", function() {
-		var fotorama = $('.fotorama').fotorama({allowfullscreen: true}).data('fotorama');
-		fotorama.requestFullScreen();
-	});
-
 	$("#city-filter").chosen({
 		disable_search: false
 	});
@@ -33,17 +28,9 @@ $(function() {
 		return false;
 	});
 
-	function ads_boxes_reverse() {
-		if($(window).width() < 992) {
-			$(".ads-content-center-box").insertAfter($(".ads-aside-right-box"));
-		} else {
-			$(".ads-content-center-box").insertBefore($(".ads-aside-right-box"));
-		}
-	}ads_boxes_reverse();
-
-	function ads_yellow_slider() {
+	function firm_nav_slider() {
 		if($(window).width() < 768) {
-			$(".slider-style-6").slick({
+			$(".slider-style-5").slick({
 				slidesToShow: 2,
 				slidesToScroll: 1,
 				rows: 1,
@@ -56,31 +43,13 @@ $(function() {
 				cssEase: 'linear',
 				autoplay: false,
 				autoplaySpeed: 2000,
-				responsive: [
-					{
-						breakpoint: 768,
-						settings: {
-							arrows: false,
-							slidesToShow: 2,
-							slidesToScroll: 1,
-						}
-					},
-					{
-						breakpoint: 480,
-						settings: {
-							arrows: false,
-							slidesToShow: 1,
-							slidesToScroll: 1
-						}
-					}
-				]
 			});
 		}
-	}ads_yellow_slider();
+	}firm_nav_slider();
+
 
 	window.onresize = function() {
-		ads_boxes_reverse();
-		ads_yellow_slider();
+		firm_nav_slider();
 	}
 
 	$(window).on("scroll", function() {

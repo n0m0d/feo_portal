@@ -92,7 +92,7 @@ h3
 		transition: all .5s ease
 		span
 			color: #fff
-			line-height: 50px
+			line-height: 55px
 			font-size: 20px
 			display: inline-block
 			vertical-align: middle
@@ -425,6 +425,7 @@ h3
 				li
 					display: inline-block
 					//border-bottom: 4px solid transparent
+					transition: all .25s ease
 					a
 						font-size: 14px
 						line-height: 40px
@@ -943,6 +944,42 @@ h3
 		font-size: 14px
 		color: $accent
 		line-height: 19px
+	.content
+		margin-top: 10px
+		margin-bottom: 10px
+		.surv-item
+			border-bottom: 1px solid #e3e3e3
+			margin-bottom: 5px
+			cursor: pointer
+			position: relative
+			.line
+				height: 3px
+				background-color: $red
+			.value
+				font-size: 13px
+				line-height: 25px
+				color: #2f2f2f
+				position: absolute
+				top: 0
+				right: 0
+			span
+				font-size: 13px
+				line-height: 25px
+				color: #2f2f2f
+				span
+					color: $red
+			&:last-child
+				margin-bottom: 0
+	.foot
+		text-align: center
+		padding-top: 10px
+		padding-bottom: 10px
+		a
+			font-size: 13px
+			line-height: 18px
+			color: #939393
+			display: inline-block
+			width: 50%
 
 /********** LINKS LIST **********/
 .links-list
@@ -1863,6 +1900,270 @@ h3
 				color: #171717
 				font-size: 16px
 				line-height: 21px
+
+.main-catalog
+	.vertical-banners
+		margin-top: 20px
+	.block-sticker-wrap
+		margin-top: 0
+	.block-sticker
+		&:last-child
+			margin-bottom: 20px
+	.catalog-content-center-box
+		.catalog-wrap
+			.catalog-search-wrap
+				background-color: $accent
+				padding: 10px
+				position: relative
+				input
+					width: 100%
+					border: none
+					outline: none
+					text-indent: 10px
+					font-size: 14px
+					line-height: 33px
+					color: #2f2f2f
+					display: inline-block
+					vertical-align: middle
+				button
+					background-color: $accent
+					border: none
+					outline: none
+					padding: 0
+					display: inline-block
+					vertical-align: middle
+					text-align: center
+					width: 45px
+					height: 55px
+					position: absolute
+					top: 0
+					right: 0
+					i
+						font-size: 16px
+						line-height: 35px
+						color: #fff
+						display: inline-block
+						vertical-align: middle
+			.firm-item-wrap
+				margin-top: 20px
+				.item
+					background-color: #FFF
+					.content
+						padding: 10px
+						text-align: center
+						p
+							font-size: 14px
+							line-height: 19px
+							color: #2f2f2f
+						span
+							font-size: 12px
+							line-height: 17px
+							color: #a3a3a3
+			.catalog-items-wrap
+				margin-top: 20px
+				background-color: #FFF
+				padding: 20px 20px 0 20px
+				.item
+					margin-bottom: 20px
+					.title
+						span
+							display: inline-block
+							margin-right: 5px
+							vertical-align: middle
+						.icon-1
+							background-image: url("/img/catalog-icons/1.png")
+							width: 48px
+							height: 32px
+						.icon-2
+							background-image: url("/img/catalog-icons/2.png")
+							width: 40px
+							height: 30px
+						.icon-3
+							background-image: url("/img/catalog-icons/3.png")
+							width: 40px
+							height: 34px
+						.icon-4
+							background-image: url("/img/catalog-icons/4.png")
+							width: 38px
+							height: 40px
+						.icon-5
+							background-image: url("/img/catalog-icons/5.png")
+							width: 36px
+							height: 40px
+						.icon-6
+							background-image: url("/img/catalog-icons/6.png")
+							width: 40px
+							height: 36px
+						.icon-7
+							background-image: url("/img/catalog-icons/7.png")
+							width: 40px
+							height: 40px
+						.icon-8
+							background-image: url("/img/catalog-icons/8.png")
+							width: 40px
+							height: 34px
+						.icon-9
+							background-image: url("/img/catalog-icons/9.png")
+							width: 44px
+							height: 30px
+						.icon-10
+							background-image: url("/img/catalog-icons/10.png")
+							width: 40px
+							height: 32px
+						.icon-11
+							background-image: url("/img/catalog-icons/11.png")
+							width: 34px
+							height: 40px
+						.icon-12
+							background-image: url("/img/catalog-icons/12.png")
+							width: 40px
+							height: 32px
+						.icon-13
+							background-image: url("/img/catalog-icons/13.png")
+							width: 22px
+							height: 40px
+						.icon-14
+							background-image: url("/img/catalog-icons/14.png")
+							width: 40px
+							height: 36px
+						.icon-15
+							background-image: url("/img/catalog-icons/15.png")
+							width: 36px
+							height: 40px
+						.icon-16
+							background-image: url("/img/catalog-icons/16.png")
+							width: 40px
+							height: 38px
+						.icon-17
+							background-image: url("/img/catalog-icons/17.png")
+							width: 44px
+							height: 30px
+						h3
+							margin: 0 0 10px 25px
+							font-size: 16px
+							line-height: 21px
+							color: $accent
+							font-family: "Roboto-Bold", sans-serif
+							text-transform: uppercase
+							display: inline-block
+					ul
+						padding: 0
+						margin: 0 0 0 75px
+						list-style-type: none
+						li
+							font-size: 0
+							a
+								font-size: 14px
+								line-height: 19px
+								color: #2f2f2f
+								span
+									color: #a3a3a3
+							&::before
+								content: ''
+								display: inline-block
+								width: 3px
+								height: 3px
+								background-color: $red
+								margin-right: 5px
+								border-radius: 100%
+								margin-bottom: 3px
+
+.main-catalog-page
+	.vertical-banners
+		margin-top: 20px
+	.block-sticker-wrap
+		margin-top: 0
+	.block-sticker
+		&:last-child
+			margin-bottom: 20px
+	.catalog-page-content-center-box
+		.catalog-page-wrap
+			.ads-block-horizontale
+				margin-top: 0
+				margin-bottom: 20px
+				.ads-item-wrap
+					.content
+						.item-title
+							a
+								font-size: 18px
+								line-height: 23px
+						.item-content-right
+							margin-top: 0
+			.cat-item-link
+				background-color: #FFF
+				font-size: 0
+				margin-bottom: 20px
+				a
+					font-size: 16px
+					line-height: 21px
+					color: #2e2e2e
+					text-decoration: none
+					display: block
+					padding: 12px 20px
+
+.main-firm
+	.vertical-banners
+		margin-top: 20px
+	.block-sticker-wrap
+		margin-top: 0
+	.block-sticker
+		&:last-child
+			margin-bottom: 20px
+	.firm-content-center-box
+		.firm-wrap
+			background-color: #FFF
+			padding: 20px
+			h1
+				font-size: 24px
+				line-height: 29px
+				color: #171717
+				margin: 0
+			ul
+				margin: 0 0 20px 0
+				padding: 0
+				font-size: 0
+				list-style-type: none
+				border-bottom: 1px solid #f2f2f2
+				li
+					display: inline-block
+					vertical-align: middle
+					cursor: pointer
+					color: #828282
+					font-size: 14px
+					line-height: 45px
+					margin-right: 14px
+					border-bottom: 3px solid transparent
+					&:last-child
+						margin-right: 0
+				.active
+					border-color: $red
+					color: $accent
+			.firm-content
+				.img-wrap
+					margin-bottom: 20px
+				.rate-wrap
+					font-size: 0
+					span
+						display: block
+						font-size: 14px
+						line-height: 19px
+						color: #828282
+				.firm-info
+					margin-bottom: 20px
+					span
+						color: #171717
+						font-size: 16px
+						line-height: 21px
+						display: block
+						margin-bottom: 5px
+						&:last-child
+							margin-bottom: 0
+				.firm-text
+					p
+						color: #171717
+						font-size: 16px
+						line-height: 21px
+
 /********** CONTENT END **********/
 
 /********** FOOTER START **********/

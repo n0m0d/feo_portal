@@ -1,5 +1,10 @@
 $(function() {
 
+	$(".fotorama__stage__shaft").on("click", function() {
+		var fotorama = $('.fotorama').fotorama({allowfullscreen: true}).data('fotorama');
+		fotorama.requestFullScreen();
+	});
+
 	$("#city-filter").chosen({
 		disable_search: false
 	});
