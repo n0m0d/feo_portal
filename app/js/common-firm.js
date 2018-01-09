@@ -1,5 +1,13 @@
 $(function() {
 
+	$(".footer-click-button").on("click", function() {
+		$(".main-wrap").toggleClass("off");
+		$(".main-wrap-in").slideToggle();
+		var $target = $('html,body'); 
+		$target.animate({scrollTop: $target.height()}, 1000);
+		return false;
+	});
+
 	$("#city-filter").chosen({
 		disable_search: false
 	});

@@ -1,5 +1,13 @@
 $(function() {
 
+	$(".footer-click-button").on("click", function() {
+		$(".main-wrap").toggleClass("off");
+		$(".main-wrap-in").slideToggle();
+		var $target = $('html,body'); 
+		$target.animate({scrollTop: $target.height()}, 1000);
+		return false;
+	});
+
 	$(".fotorama__stage__shaft").on("click", function() {
 		var fotorama = $('.fotorama').fotorama({allowfullscreen: true}).data('fotorama');
 		fotorama.requestFullScreen();

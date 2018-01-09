@@ -1306,6 +1306,8 @@ h3
 		margin-bottom: 20px
 		.info-block-verticale
 			margin-bottom: 20px
+		.blue-box
+			margin-bottom: 0
 
 .main-news
 	.section-1
@@ -2167,10 +2169,25 @@ h3
 /********** CONTENT END **********/
 
 /********** FOOTER START **********/
+.ftc-wpap
+	text-align: right
+	.footer-click-button
+		display: inline-block
+		background-color: #343434
+		width: 65px
+		height: 35px
+		text-align: center
+		cursor: pointer
+		span
+			font-size: 18px
+			line-height: 35px
+			color: #fff
+
 .main-footer
 	min-height: 120px
 	font-size: 0
 	background-color: #343434
+	position: relative
 	.main-wrap
 		.footer-block
 			display: inline-block
@@ -2205,12 +2222,77 @@ h3
 						text-align: center
 						border-radius: 50%
 						margin: 0 5px
+						transition: all .5s ease
 						i
 							color: #343434
 							font-size: 22px
 							line-height: 35px
 						&:hover
 							background-color: #262626
+	.off
+		display: none
+
+	.main-wrap-in
+		padding: 65px 0 45px 0
+		display: none
+		.footer-block
+			margin-bottom: 20px
+			text-align: center
+			.logo-wrap
+				margin-bottom: 20px
+				text-align: left
+				.logo
+					a
+						font-size: 16px
+						display: block
+			.copy
+				text-align: left
+				margin: 0 0 20px 0
+				color: #898989
+				font-size: 12px
+				line-height: 17px
+			.social-wrap
+				font-size: 0
+				display: block
+				vertical-align: middle
+				text-align: left
+				a
+					width: 35px
+					height: 35px
+					display: inline-block
+					background-color: #1a1a1a
+					text-align: center
+					border-radius: 50%
+					margin: 0 5px
+					transition: all .5s ease
+					i
+						color: #343434
+						font-size: 22px
+						line-height: 35px
+					&:hover
+						background-color: #262626
+					&:first-child
+						margin-left: 0
+			.link-sect-wrap
+				display: inline-block
+				text-align: left
+				h3
+					color: #969696
+					font-size: 16px
+					line-height: 21px
+					font-family: "Roboto-Bold", sans-serif
+					margin-bottom: 20px
+				.link-sect
+					a
+						font-size: 14px
+						line-height: 19px
+						color: #969696
+						display: block
+						text-decoration: underline
+						transition: all .5s ease
+						&:hover
+							color: #fff
+
 /********** FOOTER END **********/
 
 @import "media" // Всегда в конце
