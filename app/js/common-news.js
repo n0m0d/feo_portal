@@ -34,6 +34,12 @@ $(function() {
 		return false;
 	});
 
+	$(".add-comment .right-col .button").on("click", function(e) {
+		e.preventDefault();
+		$(".comment-area").slideToggle();
+		return false;
+	});
+
 	$(".main-slider").slick({
 		dots: false,
 		arrows: false,
