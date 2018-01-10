@@ -226,12 +226,15 @@ $(function() {
 		var heightItemsBlock = $("#news-items-block").height();
 		var heightItemsBlock1 = (heightItemsBlock / 2) - 10;
 
-		if(document.documentElement.clientWidth > 767) {
-			$(".main-slider .slick-slide").css({"height":heightNewsBlock});
-		}
-		if(document.documentElement.clientWidth > 991) {
+		if($(window).width() > 992) {
 			$(".main-index .info-block-verticale .info-item").css({"height":heightItemsBlock});
+			$(".main-slider .slick-slide").css({"height":heightNewsBlock});
+		} else if ($(window).width() > 768) {
+			$(".main-slider .slick-slide").css({"height":heightNewsBlock});
+		} else {
+			$(".main-slider .slick-slide").css({"height":"auto"});
 		}
+
 	}sliderHeight();
 
 	window.onresize = function() {

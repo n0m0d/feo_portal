@@ -50,6 +50,8 @@ $(function() {
 				autoplay: false,
 				autoplaySpeed: 2000,
 			});
+		} else {
+			$(".slider-style-5").slick('unslick');
 		}
 	}firm_nav_slider();
 
