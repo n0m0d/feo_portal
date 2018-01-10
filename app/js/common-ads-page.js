@@ -34,11 +34,9 @@ $(function() {
 		return false;
 	});
 	
-	$(".ads-li").on("click", function(e) {
-		e.preventDefault();
+	$(".ads-li").on("click", function() {
 		$(this).toggleClass("active");
 		var block = $(this).find(".ads-ul-block-inner").slideToggle();
-		return false;
 	});
 
 	function ads_boxes_reverse() {
