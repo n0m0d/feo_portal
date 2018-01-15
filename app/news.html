@@ -18,15 +18,17 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="libs/simple-line-icons/css/simple-line-icons.css">
-	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="libs/chosen/css/chosen.css">
-	<link rel="stylesheet" href="libs/slick/css/slick.css">
-	<link rel="stylesheet" href="libs/owl/css/owl.carousel.css">
-	<link rel="stylesheet" href="libs/fotorama/css/fotorama.css">
-	<link rel="stylesheet" href="libs/jquery-ui/css/jquery-ui.min.css">
-	<link rel="stylesheet" href="libs/noui-slider/css/nouislider.min.css">
-	<link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="libs/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/chosen/css/chosen.css">
+    <link rel="stylesheet" href="libs/slick/css/slick.css">
+    <link rel="stylesheet" href="libs/owl/css/owl.carousel.css">
+    <link rel="stylesheet" href="libs/fotorama/css/fotorama.css">
+    <link rel="stylesheet" href="libs/jquery-ui/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="libs/noui-slider/css/nouislider.min.css">
+    <link rel="stylesheet" href="libs/nprogress/css/nprogress.css">
+    <link rel="stylesheet" href="libs/bootstrap-select/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
@@ -36,15 +38,20 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<script src="libs/jquery/jquery.min.js"></script>
-	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="libs/chosen/js/chosen.jquery.js"></script>
-	<script src="libs/slick/js/slick.min.js"></script>
-	<script src="libs/owl/js/owl.carousel.min.js"></script>
-	<script src="libs/fotorama/js/fotorama.js"></script>
-	<script src="libs/jquery-ui/js/jquery-ui.min.js"></script>
-	<script src="libs/noui-slider/js/nouislider.min.js"></script>
-	<script src="libs/wNumb/wNumb.js"></script>
-	<script src="js/common-news.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/chosen/js/chosen.jquery.js"></script>
+    <script src="libs/slick/js/slick.min.js"></script>
+    <script src="libs/owl/js/owl.carousel.min.js"></script>
+    <script src="libs/fotorama/js/fotorama.js"></script>
+    <script src="libs/jquery-ui/js/jquery-ui.min.js"></script>
+    <script src="libs/noui-slider/js/nouislider.min.js"></script>
+    <script src="libs/wNumb/wNumb.js"></script>
+    <script src="libs/nprogress/js/nprogress.js"></script>
+    <script src="libs/cookie/jquery.cookie.js"></script>
+    <script src="libs/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="libs/timeago/jquery.timeago.js"></script>
+    <script src="libs/timeago/jquery.timeago.ru.js"></script>
+    <script src="js/common.js"></script>
 
 </head>
 
@@ -264,8 +271,8 @@
 		</div>
 	</header>
 
-	<main class="main-news">
-		<div class="container">
+	<main>
+		<div class="container main-news">
 			<div class="main-banners">
 				<div class="row">
 					<div class="col-md-6">
@@ -289,111 +296,369 @@
 			</div>
 			<section class="section-1">
 				<div class="row">
-					<div class="col-md-6 col-sm-4 hidden-xs" id="news-items-block">
+					<div class="col-md-6" id="news-items-block">
 						<div class="info-block-horizontale">
-							<div class="info-item">
-								<div class="row">
-									<div class="col-md-5">
-										<div class="img-wrap">
-											<img src="img/news-img/img-5.jpg" alt="alt">
-										</div>
-									</div>
-									<div class="col-md-7">
-										<div class="content">
-											<div class="tags">
-												<a href="#">#Новости</a>
-												<a href="#">#Фильмы</a>
-												<a href="#">#Премьеры</a>
+							<div class="row">
+								<div class="info-item col-md-12 col-sm-4">
+									<div class="info-item-bg">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
 											</div>
-											<a href="news-page.html" class="info-descr">
-												<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-											</a>
-											<div class="time">
-												<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-											</div>
-											<div class="views">
-												<span class="icon-eye"></span><span class="text-views">505</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="info-item hidden-sm hidden-xs">
-								<div class="row">
-									<div class="col-sm-5">
-										<div class="img-wrap">
-											<img src="img/news-img/img-5.jpg" alt="alt">
-										</div>
-									</div>
-									<div class="col-sm-7">
-										<div class="content">
-											<div class="tags">
-												<a href="#">#Новости</a>
-												<a href="#">#Фильмы</a>
-												<a href="#">#Премьеры</a>
-											</div>
-											<a href="news-page.html" class="info-descr">
-												<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-											</a>
-											<div class="time">
-												<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-											</div>
-											<div class="views">
-												<span class="icon-eye"></span><span class="text-views">505</span>
+											<div class="col-md-7">
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="info-item hidden-sm hidden-xs">
-								<div class="row">
-									<div class="col-sm-5">
-										<div class="img-wrap">
-											<img src="img/news-img/img-5.jpg" alt="alt">
-										</div>
-									</div>
-									<div class="col-sm-7">
-										<div class="content">
-											<div class="tags">
-												<a href="#">#Новости</a>
-												<a href="#">#Фильмы</a>
-												<a href="#">#Премьеры</a>
+								<div class="info-item col-md-12 col-sm-4">
+									<div class="info-item-bg">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
 											</div>
-											<a href="news-page.html" class="info-descr">
-												<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-											</a>
-											<div class="time">
-												<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-											</div>
-											<div class="views">
-												<span class="icon-eye"></span><span class="text-views">505</span>
+											<div class="col-md-7">
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="info-item hidden-sm hidden-xs">
-								<div class="row">
-									<div class="col-sm-5">
-										<div class="img-wrap">
-											<img src="img/news-img/img-5.jpg" alt="alt">
+								<div class="info-item col-md-12 col-sm-4">
+									<div class="info-item-bg">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="col-sm-7">
-										<div class="content">
-											<div class="tags">
-												<a href="#">#Новости</a>
-												<a href="#">#Фильмы</a>
-												<a href="#">#Премьеры</a>
+								</div>
+								<div class="info-item col-md-12 col-sm-4 hidden-sm hidden-xs">
+									<div class="info-item-bg">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
 											</div>
-											<a href="news-page.html" class="info-descr">
-												<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-											</a>
-											<div class="time">
-												<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
+											<div class="col-md-7">
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
+													</div>
+												</div>
 											</div>
-											<div class="views">
-												<span class="icon-eye"></span><span class="text-views">505</span>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="main-banners">
+									<div class="banner-wrap">
+										<a href="#">
+											<img class="img-responsive" src="img/banners/banner-2.jpg" alt="alt">
+										</a>
+									</div>
+								</div>
+								<div class="info-item col-md-12 col-sm-4">
+									<div class="info-item-bg">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="info-item col-md-12 col-sm-4">
+									<div class="info-item-bg">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="info-item col-md-12 col-sm-4">
+									<div class="info-item-bg">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="info-item col-md-12 col-sm-4 hidden-sm hidden-xs">
+									<div class="info-item-bg">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="main-banners">
+									<div class="banner-wrap">
+										<a href="#">
+											<img class="img-responsive" src="img/banners/banner-2.jpg" alt="alt">
+										</a>
+									</div>
+								</div>
+								<div class="info-item col-md-12 col-sm-4">
+									<div class="info-item-bg">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="info-item col-md-12 col-sm-4">
+									<div class="info-item-bg">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="info-item col-md-12 col-sm-4">
+									<div class="info-item-bg">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="info-item col-md-12 col-sm-4 hidden-sm hidden-xs">
+									<div class="info-item-bg">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -401,7 +666,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-8 col-xs-12 left-slider-col">
+					<div class="col-md-6 left-slider-col" id="news-sibebar-block">
 						<div class="main-slider">
 							<div>
 								<a href="news-page.html">
@@ -414,7 +679,7 @@
 											</div>
 											<div class="col-sm-3">
 												<div class="time">
-													<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
+													<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
 												</div>
 											</div>
 										</div>
@@ -432,7 +697,7 @@
 											</div>
 											<div class="col-sm-3">
 												<div class="time">
-													<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
+													<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
 												</div>
 											</div>
 										</div>
@@ -450,7 +715,7 @@
 											</div>
 											<div class="col-sm-3">
 												<div class="time">
-													<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
+													<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
 												</div>
 											</div>
 										</div>
@@ -458,553 +723,232 @@
 								</a>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12 info-item-wrap">
-						<div class="info-block-verticale">
-							<div class="info-item">
-								<div class="img-wrap">
-									<img src="img/news-img/img-5.jpg" alt="alt">
-								</div>
-								<div class="content">
-									<div class="tags">
-										<a href="#">#Новости</a>
-										<a href="#">#Фильмы</a>
-										<a href="#">#Премьеры</a>
-									</div>
-									<a href="news-page.html" class="info-descr">
-										<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-									</a>
-									<div class="time">
-										<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-									</div>
-									<div class="views">
-										<span class="icon-eye"></span><span class="text-views">505</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12 info-item-wrap">
-						<div class="info-block-verticale">
-							<div class="info-item">
-								<div class="img-wrap">
-									<img src="img/news-img/img-5.jpg" alt="alt">
-								</div>
-								<div class="content">
-									<div class="tags">
-										<a href="#">#Новости</a>
-										<a href="#">#Фильмы</a>
-										<a href="#">#Премьеры</a>
-									</div>
-									<a href="news-page.html" class="info-descr">
-										<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-									</a>
-									<div class="time">
-										<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-									</div>
-									<div class="views">
-										<span class="icon-eye"></span><span class="text-views">505</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-4 col-xs-12 hidden-lg hidden-md info-item-wrap">
-						<div class="info-block-verticale">
-							<div class="info-item">
-								<div class="img-wrap">
-									<img src="img/news-img/img-5.jpg" alt="alt">
-								</div>
-								<div class="content">
-									<div class="tags">
-										<a href="#">#Новости</a>
-										<a href="#">#Фильмы</a>
-										<a href="#">#Премьеры</a>
-									</div>
-									<a href="news-page.html" class="info-descr">
-										<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-									</a>
-									<div class="time">
-										<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-									</div>
-									<div class="views">
-										<span class="icon-eye"></span><span class="text-views">505</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="main-banners">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="banner-wrap">
-							<a href="#">
-								<img class="img-responsive" src="img/banners/banner-2.jpg" alt="alt">
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="banner-wrap">
-							<a href="#">
-								<img class="img-responsive" src="img/banners/banner-3.jpg" alt="alt">
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<section class="section-2">
-				<div class="row">
-					<div class="col-md-9 col-sm-12 col-xs-12">
 						<div class="row">
-							<div class="col-md-8 col-sm-4 col-xs-12">
-									<div class="info-block-horizontale">
-										<div class="info-item">
-											<div class="row">
-												<div class="col-md-5">
-													<div class="img-wrap">
-														<img src="img/news-img/img-5.jpg" alt="alt">
-													</div>
+							<div class="col-md-6">
+								<div class="row">
+									<div class="info-item-wrap col-md-12 col-sm-4">
+										<div class="info-block-verticale">
+											<div class="info-item">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
 												</div>
-												<div class="col-md-7">
-													<div class="content">
-														<div class="tags">
-															<a href="#">#Новости</a>
-															<a href="#">#Фильмы</a>
-															<a href="#">#Премьеры</a>
-														</div>
-														<a href="news-page.html" class="info-descr">
-															<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-														</a>
-														<div class="time">
-															<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-														</div>
-														<div class="views">
-															<span class="icon-eye"></span><span class="text-views">505</span>
-														</div>
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="info-item hidden-sm hidden-xs">
-											<div class="row">
-												<div class="col-sm-5">
-													<div class="img-wrap">
-														<img src="img/news-img/img-5.jpg" alt="alt">
-													</div>
+									</div>
+									<div class="info-item-wrap col-md-12 col-sm-4">
+										<div class="info-block-verticale">
+											<div class="info-item">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
 												</div>
-												<div class="col-sm-7">
-													<div class="content">
-														<div class="tags">
-															<a href="#">#Новости</a>
-															<a href="#">#Фильмы</a>
-															<a href="#">#Премьеры</a>
-														</div>
-														<a href="news-page.html" class="info-descr">
-															<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-														</a>
-														<div class="time">
-															<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-														</div>
-														<div class="views">
-															<span class="icon-eye"></span><span class="text-views">505</span>
-														</div>
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
 													</div>
-												</div>
-											</div>
-										</div>
-										<div class="info-item hidden-sm hidden-xs">
-											<div class="row">
-												<div class="col-sm-5">
-													<div class="img-wrap">
-														<img src="img/news-img/img-5.jpg" alt="alt">
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
 													</div>
-												</div>
-												<div class="col-sm-7">
-													<div class="content">
-														<div class="tags">
-															<a href="#">#Новости</a>
-															<a href="#">#Фильмы</a>
-															<a href="#">#Премьеры</a>
-														</div>
-														<a href="news-page.html" class="info-descr">
-															<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-														</a>
-														<div class="time">
-															<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-														</div>
-														<div class="views">
-															<span class="icon-eye"></span><span class="text-views">505</span>
-														</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="info-item hidden-sm hidden-xs">
-											<div class="row">
-												<div class="col-sm-5">
-													<div class="img-wrap">
-														<img src="img/news-img/img-5.jpg" alt="alt">
+									</div>
+									<div class="info-item-wrap col-md-12 col-sm-4">
+										<div class="info-block-verticale">
+											<div class="info-item">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
 													</div>
 												</div>
-												<div class="col-sm-7">
-													<div class="content">
-														<div class="tags">
-															<a href="#">#Новости</a>
-															<a href="#">#Фильмы</a>
-															<a href="#">#Премьеры</a>
-														</div>
-														<a href="news-page.html" class="info-descr">
-															<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-														</a>
-														<div class="time">
-															<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-														</div>
-														<div class="views">
-															<span class="icon-eye"></span><span class="text-views">505</span>
-														</div>
+											</div>
+										</div>
+									</div>
+									<div class="info-item-wrap col-md-12 col-sm-4 hidden-sm hidden-xs">
+										<div class="info-block-verticale">
+											<div class="info-item">
+												<div class="img-wrap">
+													<img src="img/news-img/img-5.jpg" alt="alt">
+												</div>
+												<div class="content">
+													<div class="tags">
+														<a href="#">#Новости</a>
+														<a href="#">#Фильмы</a>
+														<a href="#">#Премьеры</a>
+													</div>
+													<a href="news-page.html" class="info-descr">
+														<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
+													</a>
+													<div class="time">
+														<span class="icon-clock"></span><time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
+													</div>
+													<div class="views">
+														<span class="icon-eye"></span><span class="text-views">505</span>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-4 col-sm-4 col-xs-12 info-item-wrap">
-									<div class="info-block-verticale">
-										<div class="info-item">
-											<div class="img-wrap">
-												<img src="img/news-img/img-5.jpg" alt="alt">
-											</div>
-											<div class="content">
-												<div class="tags">
-													<a href="#">#Новости</a>
-													<a href="#">#Фильмы</a>
-													<a href="#">#Премьеры</a>
-												</div>
-												<a href="news-page.html" class="info-descr">
-													<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-												</a>
-												<div class="time">
-													<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-												</div>
-												<div class="views">
-													<span class="icon-eye"></span><span class="text-views">505</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 col-xs-12 info-item-wrap">
-									<div class="info-block-verticale">
-										<div class="info-item">
-											<div class="img-wrap">
-												<img src="img/news-img/img-5.jpg" alt="alt">
-											</div>
-											<div class="content">
-												<div class="tags">
-													<a href="#">#Новости</a>
-													<a href="#">#Фильмы</a>
-													<a href="#">#Премьеры</a>
-												</div>
-												<a href="news-page.html" class="info-descr">
-													<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-												</a>
-												<div class="time">
-													<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-												</div>
-												<div class="views">
-													<span class="icon-eye"></span><span class="text-views">505</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-						</div>
-						<div class="main-banners">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="banner-wrap">
-										<a href="#">
-											<img class="img-responsive" src="img/banners/banner-2.jpg" alt="alt">
-										</a>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="banner-wrap">
-										<a href="#">
-											<img class="img-responsive" src="img/banners/banner-3.jpg" alt="alt">
-										</a>
-									</div>
-								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-8 col-sm-4 col-xs-12">
-									<div class="info-block-horizontale">
-										<div class="info-item">
-											<div class="row">
-												<div class="col-md-5">
-													<div class="img-wrap">
-														<img src="img/news-img/img-5.jpg" alt="alt">
-													</div>
+							<div class="col-md-6 hidden-sm hidden-xs">
+								<div class="block-sticker-wrap">
+									<div class="blue-box">
+										<div class="blue-title">
+											<h2>Последние комментарии</h2>
+										</div>
+										<div class="blue-content">
+											<div class="item">
+												<div class="item-title">
+													<h3>В котловине Внутренней гряды Крымских гор. Осенний Кокташ</h3>
 												</div>
-												<div class="col-md-7">
-													<div class="content">
-														<div class="tags">
-															<a href="#">#Новости</a>
-															<a href="#">#Фильмы</a>
-															<a href="#">#Премьеры</a>
-														</div>
-														<a href="news-page.html" class="info-descr">
-															<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-														</a>
-														<div class="time">
-															<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-														</div>
-														<div class="views">
-															<span class="icon-eye"></span><span class="text-views">505</span>
-														</div>
+												<div class="item-content">
+													<p>
+														Бедные американцы в большинстве своем явились носителями плохого гена, а жрут не в себя просто так, ведь не от этого толстеют бедные американ dsdadadaddasdadadadada
+													</p>
+												</div>
+												<div class="item-foot">
+													<div class="time">
+														<span class="icon-clock"></span>
+														<time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
 													</div>
 												</div>
 											</div>
-										</div>
-										<div class="info-item hidden-sm hidden-xs">
-											<div class="row">
-												<div class="col-sm-5">
-													<div class="img-wrap">
-														<img src="img/news-img/img-5.jpg" alt="alt">
-													</div>
+											<div class="item">
+												<div class="item-title">
+													<h3>В котловине Внутренней гряды Крымских гор. Осенний Кокташ</h3>
 												</div>
-												<div class="col-sm-7">
-													<div class="content">
-														<div class="tags">
-															<a href="#">#Новости</a>
-															<a href="#">#Фильмы</a>
-															<a href="#">#Премьеры</a>
-														</div>
-														<a href="news-page.html" class="info-descr">
-															<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-														</a>
-														<div class="time">
-															<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-														</div>
-														<div class="views">
-															<span class="icon-eye"></span><span class="text-views">505</span>
-														</div>
+												<div class="item-content">
+													<p>
+														Бедные американцы в большинстве своем явились носителями плохого гена, а жрут не в себя просто так, ведь не от этого толстеют бедные американ
+													</p>
+												</div>
+												<div class="item-foot">
+													<div class="time">
+														<span class="icon-clock"></span>
+														<time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
 													</div>
 												</div>
 											</div>
-										</div>
-										<div class="info-item hidden-sm hidden-xs">
-											<div class="row">
-												<div class="col-sm-5">
-													<div class="img-wrap">
-														<img src="img/news-img/img-5.jpg" alt="alt">
-													</div>
+											<div class="item">
+												<div class="item-title">
+													<h3>В котловине Внутренней гряды Крымских гор. Осенний Кокташ</h3>
 												</div>
-												<div class="col-sm-7">
-													<div class="content">
-														<div class="tags">
-															<a href="#">#Новости</a>
-															<a href="#">#Фильмы</a>
-															<a href="#">#Премьеры</a>
-														</div>
-														<a href="news-page.html" class="info-descr">
-															<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-														</a>
-														<div class="time">
-															<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-														</div>
-														<div class="views">
-															<span class="icon-eye"></span><span class="text-views">505</span>
-														</div>
-													</div>
+												<div class="item-content">
+													<p>
+														Бедные американцы в большинстве своем явились носителями плохого гена, а жрут не в себя просто так, ведь не от этого толстеют бедные американ
+													</p>
 												</div>
-											</div>
-										</div>
-										<div class="info-item hidden-sm hidden-xs">
-											<div class="row">
-												<div class="col-sm-5">
-													<div class="img-wrap">
-														<img src="img/news-img/img-5.jpg" alt="alt">
-													</div>
-												</div>
-												<div class="col-sm-7">
-													<div class="content">
-														<div class="tags">
-															<a href="#">#Новости</a>
-															<a href="#">#Фильмы</a>
-															<a href="#">#Премьеры</a>
-														</div>
-														<a href="news-page.html" class="info-descr">
-															<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-														</a>
-														<div class="time">
-															<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-														</div>
-														<div class="views">
-															<span class="icon-eye"></span><span class="text-views">505</span>
-														</div>
+												<div class="item-foot">
+													<div class="time">
+														<span class="icon-clock"></span>
+														<time class="text-clock" datetime="2017-10-27 15:21:10" title="2017-10-27 15:21:10"></time>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-4 col-sm-4 col-xs-12 info-item-wrap">
-									<div class="info-block-verticale">
-										<div class="info-item">
-											<div class="img-wrap">
-												<img src="img/news-img/img-5.jpg" alt="alt">
-											</div>
-											<div class="content">
-												<div class="tags">
-													<a href="#">#Новости</a>
-													<a href="#">#Фильмы</a>
-													<a href="#">#Премьеры</a>
-												</div>
-												<a href="news-page.html" class="info-descr">
-													<span>В котловине Внутренней гряды Крымских гор. Осенний Кокташ dsadada</span>
-												</a>
-												<div class="time">
-													<span class="icon-clock"></span><span class="text-clock">Сегодня ‐ 09:58</span>
-												</div>
-												<div class="views">
-													<span class="icon-eye"></span><span class="text-views">505</span>
-												</div>
-											</div>
+									<div class="block-sticker">
+										<h3>Мебельная фабрика Дюарт</h3>
+										<p>Мебель по любым вашим размерам Подробности на сайте</p>
+										<div class="phone">
+											<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
+										</div>
+									</div>
+									<div class="block-sticker">
+										<h3>Мебельная фабрика Дюарт</h3>
+										<p>Мебель по любым вашим размерам Подробности на сайте</p>
+										<div class="phone">
+											<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
+										</div>
+									</div>
+									<div class="block-sticker">
+										<h3>Мебельная фабрика Дюарт</h3>
+										<p>Мебель по любым вашим размерам Подробности на сайте</p>
+										<div class="phone">
+											<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
+										</div>
+									</div>
+									<div class="block-sticker">
+										<h3>Мебельная фабрика Дюарт</h3>
+										<p>Мебель по любым вашим размерам Подробности на сайте</p>
+										<div class="phone">
+											<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
+										</div>
+									</div>
+									<div class="block-sticker">
+										<h3>Мебельная фабрика Дюарт</h3>
+										<p>Мебель по любым вашим размерам Подробности на сайте</p>
+										<div class="phone">
+											<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
+										</div>
+									</div>
+									<div class="block-sticker">
+										<h3>Мебельная фабрика Дюарт</h3>
+										<p>Мебель по любым вашим размерам Подробности на сайте</p>
+										<div class="phone">
+											<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
+										</div>
+									</div>
+									<div class="block-sticker">
+										<h3>Мебельная фабрика Дюарт</h3>
+										<p>Мебель по любым вашим размерам Подробности на сайте</p>
+										<div class="phone">
+											<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
+										</div>
+									</div>
+									<div class="block-sticker">
+										<h3>Мебельная фабрика Дюарт</h3>
+										<p>Мебель по любым вашим размерам Подробности на сайте</p>
+										<div class="phone">
+											<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
+										</div>
+									</div>
+									<div class="block-sticker">
+										<h3>Мебельная фабрика Дюарт</h3>
+										<p>Мебель по любым вашим размерам Подробности на сайте</p>
+										<div class="phone">
+											<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
 										</div>
 									</div>
 								</div>
-								<div class="col-md-4 col-sm-4 col-xs-12 info-item-wrap">
-									<div class="vertical-banners">
-										<div class="banner-wrap">
-											<a href="#">
-												<img class="img-responsive" src="img/banners/banner-6.jpg" alt="alt">
-											</a>
-										</div>
-									</div>
-								</div>
-						</div>
-					</div>
-					<div class="col-md-3 hidden-sm hidden-xs block-sticker-wrap">
-						<div class="blue-box">
-							<div class="blue-title">
-								<h2>Последние комментарии</h2>
-							</div>
-							<div class="blue-content">
-								<div class="item">
-									<div class="item-title">
-										<h3>В котловине Внутренней гряды Крымских гор. Осенний Кокташ</h3>
-									</div>
-									<div class="item-content">
-										<p>
-											Бедные американцы в большинстве своем явились носителями плохого гена, а жрут не в себя просто так, ведь не от этого толстеют бедные американ dsdadadaddasdadadadada
-										</p>
-									</div>
-									<div class="item-foot">
-										<div class="time">
-											<span class="icon-clock"></span>
-											<span class="text-clock">Сегодня ‐ 09:58</span>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="item-title">
-										<h3>В котловине Внутренней гряды Крымских гор. Осенний Кокташ</h3>
-									</div>
-									<div class="item-content">
-										<p>
-											Бедные американцы в большинстве своем явились носителями плохого гена, а жрут не в себя просто так, ведь не от этого толстеют бедные американ
-										</p>
-									</div>
-									<div class="item-foot">
-										<div class="time">
-											<span class="icon-clock"></span>
-											<span class="text-clock">Сегодня ‐ 09:58</span>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="item-title">
-										<h3>В котловине Внутренней гряды Крымских гор. Осенний Кокташ</h3>
-									</div>
-									<div class="item-content">
-										<p>
-											Бедные американцы в большинстве своем явились носителями плохого гена, а жрут не в себя просто так, ведь не от этого толстеют бедные американ
-										</p>
-									</div>
-									<div class="item-foot">
-										<div class="time">
-											<span class="icon-clock"></span>
-											<span class="text-clock">Сегодня ‐ 09:58</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="block-sticker">
-							<h3>Мебельная фабрика Дюарт</h3>
-							<p>Мебель по любым вашим размерам Подробности на сайте</p>
-							<div class="phone">
-								<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-							</div>
-						</div>
-						<div class="block-sticker">
-							<h3>Мебельная фабрика Дюарт</h3>
-							<p>Мебель по любым вашим размерам Подробности на сайте</p>
-							<div class="phone">
-								<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-							</div>
-						</div>
-						<div class="block-sticker">
-							<h3>Мебельная фабрика Дюарт</h3>
-							<p>Мебель по любым вашим размерам Подробности на сайте</p>
-							<div class="phone">
-								<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-							</div>
-						</div>
-						<div class="block-sticker">
-							<h3>Мебельная фабрика Дюарт</h3>
-							<p>Мебель по любым вашим размерам Подробности на сайте</p>
-							<div class="phone">
-								<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-							</div>
-						</div>
-						<div class="block-sticker">
-							<h3>Мебельная фабрика Дюарт</h3>
-							<p>Мебель по любым вашим размерам Подробности на сайте</p>
-							<div class="phone">
-								<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-							</div>
-						</div>
-						<div class="block-sticker">
-							<h3>Мебельная фабрика Дюарт</h3>
-							<p>Мебель по любым вашим размерам Подробности на сайте</p>
-							<div class="phone">
-								<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-							</div>
-						</div>
-						<div class="block-sticker">
-							<h3>Мебельная фабрика Дюарт</h3>
-							<p>Мебель по любым вашим размерам Подробности на сайте</p>
-							<div class="phone">
-								<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-							</div>
-						</div>
-						<div class="block-sticker">
-							<h3>Мебельная фабрика Дюарт</h3>
-							<p>Мебель по любым вашим размерам Подробности на сайте</p>
-							<div class="phone">
-								<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
-							</div>
-						</div>
-						<div class="block-sticker">
-							<h3>Мебельная фабрика Дюарт</h3>
-							<p>Мебель по любым вашим размерам Подробности на сайте</p>
-							<div class="phone">
-								<span class="icon-phone"></span><span class="number">+7 (978) 701-98-16</span>
 							</div>
 						</div>
 					</div>

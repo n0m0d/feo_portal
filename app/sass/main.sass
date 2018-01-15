@@ -703,71 +703,72 @@ h3
 .info-block-horizontale
 	font-size: 0
 	.info-item
-		background-color: #FFF
 		margin-bottom: 20px
-		.img-wrap
-			display: inline-block
-			width: 100%
-			max-height: 180px
-			overflow: hidden
-			img
+		.info-item-bg
+			background-color: #FFF
+			.img-wrap
+				display: inline-block
 				width: 100%
-		.content
-			display: inline-block
-			padding: 15px 15px 15px 0
-			width: 100%
-			.tags
-				font-size: 0
-				a
-					margin-right: 5px
-					color: $red
-					font-size: 12px
-					line-height: 17px
-					text-transform: uppercase
-					&:last-child
-						margin-right: 0
-			.info-descr
-				height: 86px
+				max-height: 180px
 				overflow: hidden
-				margin: 15px 0
-				display: block
-				text-decoration: none
-				span
-					color: #2e2e2e
-					font-size: 24px
-					line-height: 29px
-					font-family: "Minion-Regular"
-			.time
+				img
+					width: 100%
+			.content
 				display: inline-block
-				.text-clock
-					font-size: 12px
-					line-height: 17px
-					color: $accent
+				padding: 15px 15px 15px 0
+				width: 100%
+				.tags
+					font-size: 0
+					a
+						margin-right: 5px
+						color: $red
+						font-size: 12px
+						line-height: 17px
+						text-transform: uppercase
+						&:last-child
+							margin-right: 0
+				.info-descr
+					height: 86px
+					overflow: hidden
+					margin: 15px 0
+					display: block
+					text-decoration: none
+					span
+						color: #2e2e2e
+						font-size: 24px
+						line-height: 29px
+						font-family: "Minion-Regular"
+				.time
 					display: inline-block
-					vertical-align: bottom
-				.icon-clock
-					color: $accent
-					font-size: 16px
-					line-height: 17px
+					.text-clock
+						font-size: 12px
+						line-height: 17px
+						color: $accent
+						display: inline-block
+						vertical-align: bottom
+					.icon-clock
+						color: $accent
+						font-size: 16px
+						line-height: 17px
+						display: inline-block
+						vertical-align: bottom
+						margin-right: 5px
+				.views
 					display: inline-block
-					vertical-align: bottom
-					margin-right: 5px
-			.views
-				display: inline-block
-				float: right
-				.text-views
-					font-size: 12px
-					line-height: 17px
-					color: $accent
-					display: inline-block
-					vertical-align: bottom
-				.icon-eye
-					color: $accent
-					font-size: 16px
-					line-height: 17px
-					display: inline-block
-					vertical-align: bottom
-					margin-right: 5px
+					float: right
+					.text-views
+						font-size: 12px
+						line-height: 17px
+						color: $accent
+						display: inline-block
+						vertical-align: bottom
+					.icon-eye
+						color: $accent
+						font-size: 16px
+						line-height: 17px
+						display: inline-block
+						vertical-align: bottom
+						margin-right: 5px
 		&:last-child
 			margin-bottom: 0
 
@@ -1325,9 +1326,10 @@ blockquote
 					.item-foot
 						.time
 							font-size: 0
-							span
+							span,time
 								color: #afafaf
 								vertical-align: middle
+								display: inline-block
 							.icon-clock
 								font-size: 16px
 								line-height: 17px
@@ -1380,25 +1382,22 @@ blockquote
 
 .main-news
 	.section-1
-		.left-slider-col
-			.main-slider
-				margin-top: 0
-				margin-bottom: 20px
-		.info-item-wrap
-			&:last-child
-				.info-block-verticale
-					margin-bottom: 0
-	.section-2
-		//margin-top: 20px
-		margin-bottom: 20px
-		#news-items-block
-			margin-top: 20px
-		.info-item-wrap
-			margin-top: 20px
 		.info-block-horizontale
-			.info-item
-				&:first-child
-					margin-top: 20px
+			.main-banners
+				padding-top: 0
+				padding-bottom: 20px
+				padding-left: 10px
+				padding-right: 10px
+		.main-slider
+			margin-top: 0
+			margin-bottom: 20px
+		.info-item-wrap
+			margin-bottom: 20px
+		.block-sticker-wrap
+			margin-top: 0
+			.block-sticker
+				&:last-child
+					margin-bottom: 20px
 
 .main-news-page
 	.section-1
