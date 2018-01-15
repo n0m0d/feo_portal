@@ -1,5 +1,10 @@
 $(function() {
 
+	$('.selectpicker').selectpicker({
+		style: 'btn-info',
+		size: 4
+	});
+
 	$(".footer-click-button").on("click", function() {
 		$(".main-wrap").toggleClass("off");
 		$(".main-wrap-in").slideToggle();

@@ -34,9 +34,9 @@ $(function() {
 		return false;
 	});
 
-	$(".add-comment .right-col .button").on("click", function(e) {
-		e.preventDefault();
-		$(".comment-area").slideToggle();
+	$(".add-comment .right-col .comment-area form textarea").on("focus focusout", function() {
+		$(this).toggleClass("active");
+		$(".add-comment .right-col .comment-area form button").toggleClass("button-active");
 		return false;
 	});
 
