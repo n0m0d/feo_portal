@@ -703,72 +703,74 @@ h3
 .info-block-horizontale
 	font-size: 0
 	.info-item
+		background-color: #FFF
 		margin-bottom: 20px
-		.info-item-bg
-			background-color: #FFF
-			.img-wrap
-				display: inline-block
+		.img-wrap
+			display: inline-block
+			width: 100%
+			max-height: 180px
+			overflow: hidden
+			img
 				width: 100%
-				max-height: 180px
+		.content
+			display: inline-block
+			padding: 15px 15px 15px 0
+			width: 100%
+			.tags
+				font-size: 0
 				overflow: hidden
-				img
-					width: 100%
-			.content
+				max-height: 17px
+				a
+					display: inline-block
+					margin-right: 5px
+					color: $red
+					font-size: 12px
+					line-height: 17px
+					text-transform: uppercase
+					&:last-child
+						margin-right: 0
+			.info-descr
+				height: 86px
+				overflow: hidden
+				margin: 15px 0
+				display: block
+				text-decoration: none
+				span
+					color: #2e2e2e
+					font-size: 24px
+					line-height: 29px
+					font-family: "Minion-Regular"
+			.time
 				display: inline-block
-				padding: 15px 15px 15px 0
-				width: 100%
-				.tags
-					font-size: 0
-					a
-						margin-right: 5px
-						color: $red
-						font-size: 12px
-						line-height: 17px
-						text-transform: uppercase
-						&:last-child
-							margin-right: 0
-				.info-descr
-					height: 86px
-					overflow: hidden
-					margin: 15px 0
-					display: block
-					text-decoration: none
-					span
-						color: #2e2e2e
-						font-size: 24px
-						line-height: 29px
-						font-family: "Minion-Regular"
-				.time
+				.text-clock
+					font-size: 12px
+					line-height: 17px
+					color: $accent
 					display: inline-block
-					.text-clock
-						font-size: 12px
-						line-height: 17px
-						color: $accent
-						display: inline-block
-						vertical-align: bottom
-					.icon-clock
-						color: $accent
-						font-size: 16px
-						line-height: 17px
-						display: inline-block
-						vertical-align: bottom
-						margin-right: 5px
-				.views
+					vertical-align: bottom
+				.icon-clock
+					color: $accent
+					font-size: 16px
+					line-height: 17px
 					display: inline-block
-					float: right
-					.text-views
-						font-size: 12px
-						line-height: 17px
-						color: $accent
-						display: inline-block
-						vertical-align: bottom
-					.icon-eye
-						color: $accent
-						font-size: 16px
-						line-height: 17px
-						display: inline-block
-						vertical-align: bottom
-						margin-right: 5px
+					vertical-align: bottom
+					margin-right: 5px
+			.views
+				display: inline-block
+				float: right
+				.text-views
+					font-size: 12px
+					line-height: 17px
+					color: $accent
+					display: inline-block
+					vertical-align: bottom
+				.icon-eye
+					color: $accent
+					font-size: 16px
+					line-height: 17px
+					display: inline-block
+					vertical-align: bottom
+					margin-right: 5px
 		&:last-child
 			margin-bottom: 0
 
@@ -791,7 +793,10 @@ h3
 			width: 100%
 			.tags
 				font-size: 0
+				overflow: hidden
+				max-height: 17px
 				a
+					display: inline-block
 					margin-right: 5px
 					color: $red
 					font-size: 12px
@@ -932,7 +937,7 @@ blockquote
 		background-color: $accent
 		h2
 			color: #fff
-			line-height: 45px
+			line-height: 55px
 			padding: 0 20px
 	.blue-content
 		padding: 20px
@@ -1043,7 +1048,7 @@ blockquote
 	.foot
 		text-align: center
 		padding-top: 10px
-		padding-bottom: 10px
+		padding-bottom: 7px
 		a
 			font-size: 13px
 			line-height: 18px
@@ -1329,7 +1334,6 @@ blockquote
 							span,time
 								color: #afafaf
 								vertical-align: middle
-								display: inline-block
 							.icon-clock
 								font-size: 16px
 								line-height: 17px
@@ -1382,22 +1386,25 @@ blockquote
 
 .main-news
 	.section-1
-		.info-block-horizontale
-			.main-banners
-				padding-top: 0
-				padding-bottom: 20px
-				padding-left: 10px
-				padding-right: 10px
-		.main-slider
-			margin-top: 0
-			margin-bottom: 20px
+		.left-slider-col
+			.main-slider
+				margin-top: 0
+				margin-bottom: 20px
 		.info-item-wrap
-			margin-bottom: 20px
-		.block-sticker-wrap
-			margin-top: 0
-			.block-sticker
-				&:last-child
-					margin-bottom: 20px
+			&:last-child
+				.info-block-verticale
+					margin-bottom: 0
+	.section-2
+		//margin-top: 20px
+		margin-bottom: 20px
+		#news-items-block
+			margin-top: 20px
+		.info-item-wrap
+			margin-top: 20px
+		.info-block-horizontale
+			.info-item
+				&:first-child
+					margin-top: 20px
 
 .main-news-page
 	.section-1

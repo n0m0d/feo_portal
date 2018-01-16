@@ -366,15 +366,15 @@ $(function() {
             if ($(window).width() > 992) {
                 $(".main-index .info-block-verticale .info-item").css({"height": heightItemsBlock});
                 $(".main-slider .slick-slide").css({"height": heightNewsBlock});
-                //$(".main-news .info-block-verticale .info-item").css({"height": heightItemsBlock1});
-                //$(".main-news .section-1 .left-slider-col .main-slider .slick-slide img").css({"height": heightItemsBlock1});
+                $(".main-news .info-block-verticale .info-item").css({"height": heightItemsBlock1});
+                $(".main-news .section-1 .left-slider-col .main-slider .slick-slide img").css({"height": heightItemsBlock1});
             } else if ($(window).width() > 768) {
                 $(".main-slider .slick-slide").css({"height": heightNewsBlock});
-                //$(".main-news .section-1 .left-slider-col .main-slider .slick-slide img").css({"height": heightItemsBlock});
-                //$(".main-news .info-block-verticale .info-item").css({"height": "auto"});
+                $(".main-news .section-1 .left-slider-col .main-slider .slick-slide img").css({"height": heightItemsBlock});
+                $(".main-news .info-block-verticale .info-item").css({"height": "auto"});
             } else {
                 $(".main-slider .slick-slide").css({"height": "auto"});
-                //$(".main-news .section-1 .left-slider-col .main-slider .slick-slide img").css({"height": "auto"});
+                $(".main-news .section-1 .left-slider-col .main-slider .slick-slide img").css({"height": "auto"});
             }
 
         }
