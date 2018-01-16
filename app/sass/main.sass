@@ -187,7 +187,7 @@ h3
 	top: 0
 	z-index: 999
 	font-size: 0
-	.select-city
+	.bootstrap-select
 		display: inline-block
 		vertical-align: middle
 		margin-right: 20px
@@ -200,19 +200,28 @@ h3
 			&:hover, &:focus, &:active
 				background-color: #465FA3
 				border-color: #fff
-	button
-		background-color: $red
+	.select-usr
+		.btn-info
+			background-color: $red
+			border-color: #fff
+			&:hover, &:focus, &:active
+				background-color: #b2423a
+				border-color: #fff
+	.select-button
+		background-color: #fff
 		border-radius: 4px
 		font-size: 18px
+		border: 1px solid #fff
 		line-height: 25px
 		padding: 6px 12px
-		color: #fff
+		color: $accent
 		border: none
 		display: inline-block
 		vertical-align: middle
 		transition: all .25s ease
 		&:hover
-			background-color: #c44740
+			background-color: $accent
+			color: #fff
 
 /********** HEADER START **********/
 .main-header
@@ -288,6 +297,17 @@ h3
 							vertical-align: middle
 							position: absolute
 							left: 0
+			.usr-wrap
+				margin-top: 5px
+				span
+					font-size: 13px
+					line-height: 19px
+					display: inline-block
+					vertical-align: middle
+					color: $red
+				.icon-eye, .icon-direction
+					margin-right: 10px
+					font-size: 18px
 		.sect-3
 			display: inline-block
 			vertical-align: middle
