@@ -82,9 +82,9 @@ $(function() {
         function slidersInit() {
 
             function slider_1_rows() {
-                if ($(window).width() > 992) {
+                if ($(window).width() > 991) {
                     var rows = 2;
-                } else if ($(window).width() < 480) {
+                } else if ($(window).width() < 479) {
                     var rows = 2;
                 } else {
                     var rows = 1;
@@ -94,7 +94,7 @@ $(function() {
             }
 
             function slider_3_rows() {
-                if ($(window).width() < 480) {
+                if ($(window).width() < 479) {
                     var rows = 2;
                 } else {
                     var rows = 1;
@@ -104,9 +104,9 @@ $(function() {
             }
 
             function slider_4_rows() {
-                if ($(window).width() > 992) {
+                if ($(window).width() > 991) {
                     var rows = 2;
-                } else if ($(window).width() < 480) {
+                } else if ($(window).width() < 479) {
                     var rows = 2;
                 } else {
                     var rows = 1;
@@ -267,7 +267,7 @@ $(function() {
         });
 
         function ads_boxes_reverse() {
-            if ($(window).width() < 992) {
+            if ($(window).width() < 991) {
                 $(".ads-content-center-box").insertAfter($(".ads-aside-right-box"));
             } else {
                 $(".ads-content-center-box").insertBefore($(".ads-aside-right-box"));
@@ -277,7 +277,7 @@ $(function() {
         ads_boxes_reverse();
 
         function news_boxes_reverse() {
-			if($(window).width() < 992) {
+			if($(window).width() < 991) {
 				$("#news-items-block").insertAfter($("#news-sibebar-block"));
 			} else {
 				$("#news-items-block").insertBefore($("#news-sibebar-block"));
@@ -287,7 +287,7 @@ $(function() {
 		news_boxes_reverse();
 
         function ads_yellow_slider() {
-            if ($(window).width() < 768) {
+            if ($(window).width() < 767) {
                 $(".slider-style-6").slick({
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -326,7 +326,7 @@ $(function() {
         ads_yellow_slider();
 
         function firm_nav_slider() {
-            if ($(window).width() < 768) {
+            if ($(window).width() < 767) {
                 $(".slider-style-5").slick({
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -363,12 +363,12 @@ $(function() {
             var heightItemsBlock = $("#news-items-block").height();
             var heightItemsBlock1 = (heightItemsBlock / 2) - 10;
 
-            if ($(window).width() > 992) {
+            if ($(window).width() > 991) {
                 $(".main-index .info-block-verticale .info-item").css({"height": heightItemsBlock});
                 $(".main-slider .slick-slide").css({"height": heightNewsBlock});
                 $(".main-news .info-block-verticale .info-item").css({"height": heightItemsBlock1});
                 $(".main-news .section-1 .left-slider-col .main-slider .slick-slide img").css({"height": heightItemsBlock1});
-            } else if ($(window).width() > 768) {
+            } else if ($(window).width() > 767) {
                 $(".main-slider .slick-slide").css({"height": heightNewsBlock});
                 $(".main-news .section-1 .left-slider-col .main-slider .slick-slide img").css({"height": heightItemsBlock});
                 $(".main-news .info-block-verticale .info-item").css({"height": "auto"});
