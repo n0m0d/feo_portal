@@ -71,7 +71,7 @@ $(function() {
 			if ($(window).width() > 991) {
 				$('.fotorama').on('fotorama:load fotorama:show fotorama:showend', function (e, fotorama, extra) {
 					$(".fotorama-banner").remove();
-					$(".fotorama__active").append("<div class='fotorama-banner'><img src='http://gorod24/application/views/gorod24/img/banners/banner-2.jpg' alt='alt' /></div>");
+					$(".fotorama__active").append("<div class='fotorama-banner'><img src='https://gsp1.feomedia.ru/application/views/gorod24/img/banners/banner-2.jpg' alt='alt' /></div>");
 				});
 			} else {
 				$(".fotorama-banner").remove();

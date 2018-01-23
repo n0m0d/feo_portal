@@ -624,10 +624,14 @@ h3
 			.item-title
 				display: inline-block
 				vertical-align: middle
+				max-width: 275px
+				overflow: hidden
+				text-overflow: ellipsis
 				a
 					font-size: 16px
 					color: #2e2e2e
 					line-height: 21px
+					white-space: nowrap
 			.item-select
 				display: inline-block
 				vertical-align: middle
@@ -667,7 +671,7 @@ h3
 					font-size: 14px
 					line-height: 19px
 					margin: 8px 0
-					max-height: 57px
+					height: 57px
 					overflow: hidden
 			.item-content-right
 				display: inline-block
@@ -706,7 +710,7 @@ h3
 					font-size: 0
 					vertical-align: middle
 					margin-right: 5px
-					span
+					span, time
 						color: #afafaf
 						font-size: 17px
 						line-height: 21px
@@ -1006,6 +1010,7 @@ blockquote
 					color: #2e2e2e
 					line-height: 21px
 					margin: 10px 5px 5px 5px
+					display: block
 			.item-foot
 				font-size: 0
 				margin-left: 5px
@@ -1035,7 +1040,7 @@ blockquote
 				.time
 					font-size: 0
 					margin-top: 5px
-					span
+					span,time
 						color: #afafaf
 						font-size: 17px
 						line-height: 17px
@@ -1979,7 +1984,7 @@ blockquote
 				display: inline-block
 				vertical-align: middle
 				margin-right: 19px
-				span
+				span,time
 					color: #afafaf
 					font-size: 14px
 					line-height: 19px
